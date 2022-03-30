@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://www.theodinproject.com/lessons/foundations-landing-page -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>
+      Project: Landing Page | The Odin Project
+    </title>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<script type="text/javascript" src="./Project_ Landing Page _ The Odin Project_files/17c82925e3"></script><script src="./Project_ Landing Page _ The Odin Project_files/nr-1215.min.js"></script><script type="text/javascript" async="" src="./Project_ Landing Page _ The Odin Project_files/ga.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"17c82925e3","applicationID":"2418536","transactionName":"d1xcEEpcDg1RS05aU0dAXQpLHBEJW04=","queueTime":2,"applicationTime":148,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"17c82925e3",applicationID:"2418536"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Odin Project empowers aspiring web developers to learn together for free">
+    <meta property="og:image" content="https://www.theodinproject.com/assets/og-logo-022832d4cefeec1d5266237be260192f5980f9bcbf1c9ca151b358f0ce1fd2df.png">
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="8QTMb8go52kJxfX1aJs2ApmW1uVj8XopnaWLdvg+G21g/YEiqDwzXi+MMyitPxcNAW9Ow5Ma4bSJ0k97WbhwhA==">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.theodinproject.com/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://www.theodinproject.com/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.theodinproject.com/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://www.theodinproject.com/manifest.json">
+    <link rel="mask-icon" href="https://www.theodinproject.com/safari-pinned-tab.svg" color="#5bbad5">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Project_ Landing Page _ The Odin Project_files/css2" rel="stylesheet">
+
+    <link rel="stylesheet" media="all" href="./Project_ Landing Page _ The Odin Project_files/application_stylesheet-b7fb6b294d13bfc7b3053099a25b168a42563250586c00bf75ee32e7bcb7b676.css">
+    <link rel="stylesheet" media="screen" href="./Project_ Landing Page _ The Odin Project_files/application-75fd1867.css">
+
+
+    <script src="./Project_ Landing Page _ The Odin Project_files/application-2c2abcaff04b145b56fa.js" defer="defer"></script>
+  </head>
+
+  <body class="line-numbers h-full" data-new-gr-c-s-check-loaded="14.1054.0" data-gr-ext-installed="">
+    <div data-controller="mobile-menu" data-mobile-menu-target="container" data-action="custom-events:openMobileMenu@window-&gt;mobile-menu#open" class="fixed inset-0 flex z-40 hidden lg:hidden" role="dialog" aria-modal="true">
+
+  <div data-mobile-menu-target="menuOverlay" data-action="click-&gt;mobile-menu#close" class="fixed inset-0 bg-gray-600 bg-opacity-75 hidden" aria-hidden="true" data-transition-enter="transition-opacity ease-linear duration-200" data-transition-enter-start="transform opacity-0" data-transition-enter-end="transform opacity-100" data-transition-leave="transition-opacity ease-linear duration-200" data-transition-leave-start="transform opacity-100" data-transition-leave-end="transform opacity-0">
+  </div>
+
+    <div data-mobile-menu-target="menu" class="odin-dark-mobile-menu relative flex-1 flex flex-col max-w-xs w-full bg-white focus:outline-none hidden" data-transition-enter="transition ease-in-out duration-200 transform" data-transition-enter-start="-translate-x-full" data-transition-enter-end="translate-x-0" data-transition-leave="transition ease-in-out duration-200 transform" data-transition-leave-start="translate-x-0" data-transition-leave-end="-translate-x-full">
+
+      <div data-mobile-menu-target="closeButton" class="absolute top-2 right-2 -mr-12 pt-3 hidden" data-action="click-&gt;mobile-menu#close" data-transition-enter="transition ease-in-out duration-200" data-transition-enter-start="transform opacity-0" data-transition-enter-end="transform opacity-100" data-transition-leave="transition ease-in duration-200" data-transition-leave-start="transform opacity-100" data-transition-leave-end="transform opacity-0">
+        <button type="button" class="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+          <span class="sr-only">Close sidebar</span>
+          <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="flex-1 h-0 pt-3 pb-4 overflow-y-auto">
+        <div class="flex-shrink-0 flex items-center px-4">
+          <a href="https://www.theodinproject.com/">
+  <svg xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="a3jaw0xljze9f4elxnvjqm8nuntat1o6" class="h-15 w-auto text-gray-800"><title id="a3jaw0xljze9f4elxnvjqm8nuntat1o6">Odin Logo</title>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3"></path>
+<ellipse cx="27.7849" cy="27.1223" rx="1.26005" ry="1.24284" fill="#353535"></ellipse>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.446 25.7092C19.446 25.2752 19.0891 24.9233 18.6493 24.9233C17.638 24.9233 15.9034 24.9233 14.8922 24.9233C14.4523 24.9233 14.0955 25.2752 14.0955 25.7092C14.0955 26.3856 14.0955 27.3716 14.0955 28.1426C14.0955 28.7935 14.6305 29.3212 15.2902 29.3212C15.6995 29.3212 16.1763 29.3212 16.6578 29.3212C17.3973 29.3212 18.1062 29.0314 18.6295 28.5155C19.1522 28.0001 19.446 27.3004 19.446 26.5712C19.446 26.2585 19.446 25.9621 19.446 25.7092Z" fill="#A78347"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.0004 4.5308L43.8517 0L39.0002 18L35.0002 22L35.0004 4.5308Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.8514 4.5308L0.000132561 0L4.85156 18L8.85156 22L8.8514 4.5308Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.442 12.7438C35.442 12.7438 28.7539 8.34589 22.0657 8.34589C15.3776 8.34589 8.68945 12.7438 8.68945 12.7438V25.9373L10.473 29.4556C11.7527 24.5929 17.5445 22.5672 21.576 25.5723L22.0657 25.9373L22.5554 25.5723C26.587 22.5672 32.3788 24.5929 33.6585 29.4556L35.442 25.9373V12.7438Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6068 32.5341L14.0398 53.2041L9.12134 49.6858L13.148 34.7331L17.6068 32.5341Z" fill="#D4D4D4"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5243 32.5341L30.0913 53.2041L35.0098 49.6858L30.9831 34.7331L26.5243 32.5341Z" fill="#D5D5D5"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68933 25.9373L5.12231 39.1309L9.58108 47.9267L13.1481 34.7331L8.68933 25.9373Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.4418 25.9373L39.0088 39.1309L34.55 47.9267L30.983 34.7331L35.4418 25.9373Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6069 32.5341L13.594 54.0837L22.0656 58.4815L30.5373 54.0837L26.5244 32.5341L22.3983 30.4992L22.0656 30.3352L17.6069 32.5341Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.6636 33.4137H20.5425C20.5425 33.4137 20.5425 33.9348 20.5425 34.514C20.5425 34.9222 20.707 35.3131 20.9995 35.6016C21.292 35.8901 21.6884 36.0524 22.1022 36.0524C22.1026 36.0524 22.1035 36.0524 22.1039 36.0524C22.5177 36.0524 22.9141 35.8901 23.2066 35.6016C23.4991 35.3131 23.6636 34.9222 23.6636 34.514C23.6636 33.9348 23.6636 33.4137 23.6636 33.4137Z" fill="#353535"></path>
+<path d="M68.808 20.384L67.704 20.456C67.368 20.456 67.056 20.456 66.696 20.432C66.504 20.432 66.288 20.6 66.144 20.6L65.688 20.408L63.36 20.288L63.288 22.256L63.576 22.544L65.04 22.496C65.112 22.496 65.256 22.472 65.424 22.424L65.544 22.304L66.072 22.376L66.216 23.36L66.12 24.896L66.264 26.024L66.144 30.92L66.024 34.304L66.24 34.544L65.88 36.056V37.904L67.152 38.096L67.824 37.976L68.52 37.592L68.328 35.888V31.376L68.04 30.92L68.064 30.896L68.28 29.456L68.256 27.608V27.2C68.256 27.032 68.232 26.816 68.232 26.624C68.208 26.48 68.208 25.88 68.208 25.664L68.256 23.888L68.16 23.36L68.304 22.352H69.048L69.768 22.4L70.008 22.472H71.088L71.16 21.344L71.016 20.336L68.808 20.384ZM73.2638 33.992L73.3118 35.504L73.6478 35.864L73.2638 36.32L73.1918 37.928L74.7038 38.072L75.6878 38.024L75.7118 37.136L75.6398 36.056L75.4958 34.784L75.5198 34.712L75.6398 30.536L77.5118 29.744H77.5358L78.9278 29.432L78.9038 29.864L78.9758 30.2L78.9278 33.896L79.2878 34.28L79.0478 34.496L78.8798 37.184L79.1918 38.024H80.5838L81.4718 37.976L81.4238 36.656L81.2558 36.056L81.2078 32.984L81.1598 28.688L81.1118 28.208L81.0398 27.128L81.1598 24.872L80.9438 24.176L81.1838 23.864L81.2078 22.952V22.976L81.3518 21.608L81.4238 20.408L80.0558 20.36L79.1678 20.336L78.8078 21.032L78.9278 21.992L78.9758 24.152L79.0478 26.336L78.9518 26.984L78.6878 27.104L78.2318 27.32L77.2478 27.752L77.0318 28.016L76.6478 27.872L75.6398 28.232L75.5918 28.256L75.3758 25.928L75.4718 24.344L75.2078 24.128L75.4958 23.672L75.6158 22.208L75.7118 20.48L73.6478 20.216L73.0718 20.6L73.2398 22.088L73.1678 22.568L73.2398 24.152L73.4078 25.64L73.3118 27.992L73.4798 30.704L73.2638 33.992ZM90.8258 22.616L90.8738 21.272L90.8498 20.336L88.4738 20.36L87.5378 20.552L87.2018 20.36H85.8338L84.7058 20.504L84.8258 22.208L85.0898 22.52L84.8258 22.928L84.8498 24.152L84.8258 26.024V27.8L84.7538 28.688L84.9458 31.064L84.8498 31.256L84.8738 32.552V33.104L85.0898 33.392L84.8018 34.016L84.7778 35.12L84.8018 35.384L84.6578 37.016L84.7778 38L86.5778 38.024L86.7698 37.904H87.6098L88.9778 38.048L90.5618 38.072L91.1138 37.832L91.2098 36.944L91.2578 35.744L90.0578 35.72L89.4578 35.912L87.5378 35.936L87.3458 35.888L87.1298 35.84L87.0818 33.512L87.0578 33.464L87.1298 33.248L86.9858 32.552L87.0818 30.08H87.4658L88.9778 30.128L90.1538 30.176L90.2018 29.192L90.3458 28.472L90.0338 27.872L88.8098 27.992L87.8738 28.04L86.9858 27.992L86.9378 27.056L86.6978 26.864L86.9618 26.432L87.0818 25.712V23.336L87.1298 22.736V22.472H87.3458L88.6658 22.52L89.0498 22.448L89.1218 22.424L89.6978 22.616H90.8258ZM102.331 20.312L102.115 20.336H101.227L101.179 20.504L101.035 21.224L100.939 21.368L99.6429 24.608L99.7629 24.872L99.3309 25.184L98.0349 28.328L97.8429 28.448L97.8909 29.96L98.4669 31.184L99.3309 33.224L100.051 34.712H100.315L100.243 35.12L101.083 37.208L101.107 38L103.291 38.024L103.339 37.76L103.627 36.992L104.923 33.92L105.475 32.768L105.499 32.384L105.691 32.144L106.867 29.768L106.939 28.448L106.123 26.672L105.475 25.232H105.235L105.115 24.584L103.891 21.584L103.411 20.264L102.331 20.312ZM102.379 34.952L101.323 32.192L100.843 31.208L100.363 30.872L100.603 30.584L100.387 29.888L100.075 29.096L100.051 28.808L100.843 26.744L100.675 26.36L101.011 26.264L102.331 22.784L102.475 23.24L103.027 24.704L103.459 24.968L103.243 25.256L104.179 27.68L104.467 28.496L104.659 29.096L103.483 31.976L103.507 32.408H103.531L103.243 32.696L102.475 35.216L102.379 34.952ZM113.227 35.72L114.067 34.016L116.539 30.224L116.971 29.504L116.947 27.752L116.515 27.2L116.539 27.248L114.715 24.824L114.091 23.72L113.251 22.88L112.987 22.088L111.499 20.048L110.227 20.432L109.195 20.744L109.219 21.632L109.291 22.88L109.531 23.192L109.291 23.648L109.315 29.936L109.459 30.872L109.315 36.248V36.224L109.267 37.832L110.827 38.048L111.619 38.264L113.227 35.72ZM111.451 26.744L111.379 23.264L111.523 23.432L113.899 27.248L114.379 27.632L114.475 28.208L114.907 28.856L114.475 29.552L113.683 30.872L112.675 32.816L112.867 33.032L112.435 33.248L111.379 34.952L111.355 35L111.379 33.704L111.475 28.952L111.091 27.824L111.451 26.744ZM119.431 27.56L119.359 28.88L119.287 29.624V34.112V34.976L119.575 35.384L119.287 35.864L118.951 38L120.055 38.024L120.559 38.048L121.615 37.712L121.639 36.824L121.591 36.368L121.543 36.008V29.36L121.279 29.192L121.495 28.688L121.447 28.088L121.351 27.152L121.423 25.928L121.495 22.784L121.615 22.184L121.735 20.432L120.175 20.336L119.047 20.408L119.167 21.608L119.383 21.728L119.191 22.16L119.263 26.96L119.431 27.56ZM133.115 35.888V35.12L132.947 29.864L132.683 29.072L132.875 28.064L133.115 22.16L133.163 20.528L132.179 20.36L130.787 20.384V22.304L131.027 22.64L130.787 23.384V25.448L129.995 24.152L129.803 24.056L129.203 23.096L127.043 20.12L125.147 20.648V21.896L125.243 24.392L125.339 25.76L125.243 30.752L125.459 31.232L125.267 31.928L125.123 35.336V35.744L125.195 35.96L125.027 37.88L126.059 38.072L127.475 38.024L127.523 36.488L127.451 36.152L127.475 33.656L127.259 32.744L127.379 31.88L127.427 26.408L127.139 26.096L127.115 26.048L127.451 25.184V23.888L128.075 24.752L129.059 26.12L129.755 26.96L130.091 27.488L130.427 27.848L130.811 28.496L130.835 30.992L130.907 31.448L130.835 31.568L130.811 33.872L130.835 36.152L130.811 38.024L131.627 38.072L132.947 38.048L133.259 37.232L133.115 35.888ZM147.393 28.76L148.161 28.016L148.905 27.104L148.953 25.448L146.457 22.808L145.953 22.64L145.857 22.232L143.697 20L142.929 20.288L141.777 20.792L141.825 22.4L141.945 23.384V27.32L141.897 27.44L141.873 33.44L142.161 33.752L141.945 34.496L141.681 37.928L143.073 38.072L144.273 38L144.129 35.024L143.745 34.688L144.129 34.112L144.081 32.456L144.297 32.216L145.905 30.392L147.393 28.76ZM144.105 27.128L143.841 26.648L144.081 25.904L144.057 24.752L144.081 23.048L145.473 24.608L145.689 24.752L145.857 25.088L146.889 26.24L146.505 26.792L146.265 27.392L146.001 27.32L144.801 28.736L144.105 29.48V27.128ZM153.466 30.608L154.426 32.552L154.642 33.104L155.53 34.784L155.818 34.928L155.794 35.336L156.634 37.256L157.21 38.192L159.154 37.112L159.178 36.416L158.386 35.576L157.954 34.664V34.688L157.618 33.992L157.474 33.92V33.608L156.514 31.976C156.346 31.736 156.202 31.616 156.01 31.4V30.992C155.866 30.704 155.578 30.296 155.41 29.96L156.082 29.048L156.49 28.544L157.258 27.632L158.362 26.288L158.53 24.848L157.378 23.792C157.354 23.792 156.97 23.912 156.946 23.888L156.802 23.288L152.986 19.976L151.09 20.744L151.186 22.808L151.306 27.392L151.114 27.872L151.162 29.12L151.258 31.928V32.864L151.474 33.176L151.114 34.112L150.97 37.928L152.554 38.072L153.514 37.688L153.49 35.696L153.418 35.48L153.346 33.08L153.322 30.464L153.466 30.608ZM153.37 28.352L153.274 26.216L153.226 25.952L153.178 25.808L153.082 25.376L153.274 24.92V24.68L153.322 22.832L155.53 25.016L155.698 25.136L156.178 25.736L155.914 26.072C155.602 26.504 155.026 27.248 154.69 27.656L153.49 29.144L153.322 29.24L153.37 28.352ZM164.323 20.312L164.107 20.336H163.219L163.171 20.504L163.027 21.224L162.931 21.368L161.635 24.608L161.755 24.872L161.323 25.184L160.027 28.328L159.835 28.448L159.883 29.96L160.459 31.184L161.323 33.224L162.043 34.712H162.307L162.235 35.12L163.075 37.208L163.099 38L165.283 38.024L165.331 37.76L165.619 36.992L166.915 33.92L167.467 32.768L167.491 32.384L167.683 32.144L168.859 29.768L168.931 28.448L168.115 26.672L167.467 25.232H167.227L167.107 24.584L165.883 21.584L165.403 20.264L164.323 20.312ZM164.371 34.952L163.315 32.192L162.835 31.208L162.355 30.872L162.595 30.584L162.379 29.888L162.067 29.096L162.043 28.808L162.835 26.744L162.667 26.36L163.003 26.264L164.323 22.784L164.467 23.24L165.019 24.704L165.451 24.968L165.235 25.256L166.171 27.68L166.459 28.496L166.651 29.096L165.475 31.976L165.499 32.408H165.523L165.235 32.696L164.467 35.216L164.371 34.952ZM171.71 27.608L171.59 28.928L171.614 30.416L171.638 30.752V31.688L171.542 34.304L171.59 34.52L171.23 35.024L170.174 35.72L169.118 36.152V37.4L170.438 38.384L172.214 36.944L172.19 36.464L172.838 36.368L173.606 35.696L173.99 35.024L173.702 30.896L173.51 30.176L173.774 29.984L173.678 23.288L173.966 21.176L173.654 20.336L171.374 20.384V21.728L171.806 21.968L171.494 22.352L171.566 26.408L171.71 27.608ZM183.502 22.616L183.55 21.272L183.526 20.336L181.15 20.36L180.214 20.552L179.878 20.36H178.51L177.382 20.504L177.502 22.208L177.766 22.52L177.502 22.928L177.526 24.152L177.502 26.024V27.8L177.43 28.688L177.622 31.064L177.526 31.256L177.55 32.552V33.104L177.766 33.392L177.478 34.016L177.454 35.12L177.478 35.384L177.334 37.016L177.454 38L179.254 38.024L179.446 37.904H180.286L181.654 38.048L183.238 38.072L183.79 37.832L183.886 36.944L183.934 35.744L182.734 35.72L182.134 35.912L180.214 35.936L180.022 35.888L179.806 35.84L179.758 33.512L179.734 33.464L179.806 33.248L179.662 32.552L179.758 30.08H180.142L181.654 30.128L182.83 30.176L182.878 29.192L183.022 28.472L182.71 27.872L181.486 27.992L180.55 28.04L179.662 27.992L179.614 27.056L179.374 26.864L179.638 26.432L179.758 25.712V23.336L179.806 22.736V22.472H180.022L181.342 22.52L181.726 22.448L181.798 22.424L182.374 22.616H183.502ZM185.362 30.896L186.226 32.456L187.33 33.488L187.138 33.92L188.962 36.752L189.01 37.04L189.826 38.312L190.642 37.784L191.89 36.752L191.338 35.864L190.09 34.232L188.986 32.36L188.098 30.992L187.882 30.512L187.546 30.176L187.306 29.72L186.946 29.024L187.258 28.448L187.714 27.632L188.506 26.384L189.946 24.248L190.066 23.6L190.474 23.336L191.146 22.4L191.818 21.2L190.018 20L189.178 20.984L189.154 21.176L187.81 23.384V23.48L187.21 24.44V25.016L186.346 25.856L184.786 28.496L184.81 30.032L185.362 30.896ZM198.12 20.384L197.016 20.456C196.68 20.456 196.368 20.456 196.008 20.432C195.816 20.432 195.6 20.6 195.456 20.6L195 20.408L192.672 20.288L192.6 22.256L192.888 22.544L194.352 22.496C194.424 22.496 194.568 22.472 194.736 22.424L194.856 22.304L195.384 22.376L195.528 23.36L195.432 24.896L195.576 26.024L195.456 30.92L195.336 34.304L195.552 34.544L195.192 36.056V37.904L196.464 38.096L197.136 37.976L197.832 37.592L197.64 35.888V31.376L197.352 30.92L197.376 30.896L197.592 29.456L197.568 27.608V27.2C197.568 27.032 197.544 26.816 197.544 26.624C197.52 26.48 197.52 25.88 197.52 25.664L197.568 23.888L197.472 23.36L197.616 22.352H198.36L199.08 22.4L199.32 22.472H200.4L200.472 21.344L200.328 20.336L198.12 20.384Z" fill="currentColor"></path>
+</svg>
+
+</a>
+        </div>
+        <nav aria-label="Sidebar" class="mt-3">
+          <div class="px-2 space-y-1">
+                <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium " data-test-id="nav-dashboard" href="https://www.theodinproject.com/">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" role="img" aria-labelledby="agwsar7ltv603nmtnt2q51ollsofgchu" class="text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="agwsar7ltv603nmtnt2q51ollsofgchu">Dashboard icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+</svg>
+
+    Dashboard
+</a>
+                <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium " data-test-id="nav-all-paths" href="https://www.theodinproject.com/paths">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="img" aria-labelledby="agviakdvvi6n0r7abxtrp02ltf0apw67" class="text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="agviakdvvi6n0r7abxtrp02ltf0apw67">All Paths icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"></path>
+</svg>
+
+    All Paths
+</a>
+                <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium " data-test-id="nav-notifications" href="https://www.theodinproject.com/notifications">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="img" aria-labelledby="aedkb8av2u9yqpaemtonpigw32b5egdk" class="text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="aedkb8av2u9yqpaemtonpigw32b5egdk">Notifications icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+</svg>
+
+    Notifications
+</a>
+                <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium " data-test-id="nav-community" href="https://discord.gg/fbFCkYabZB">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" role="img" aria-labelledby="acdldyed7bd2s07wm3iqwc1p5tk1s4bx" class="text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="acdldyed7bd2s07wm3iqwc1p5tk1s4bx">Community icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+</svg>
+
+    Community
+</a>
+          </div>
+          <hr class="border-t border-gray-200 my-4" aria-hidden="true">
+          <div class="px-2 space-y-1">
+                <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium " data-test-id="nav-settings" href="https://www.theodinproject.com/users/edit">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="img" aria-labelledby="a1b5igrftxieh2kwkgn96r3x0npn5gch" class="text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="a1b5igrftxieh2kwkgn96r3x0npn5gch">Settings icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+  </svg>
+
+    Settings
+</a>
+                 <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium" rel="nofollow" data-method="put" href="https://www.theodinproject.com/themes?theme=dark">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="overflow:visible" role="img" aria-labelledby="abt6207q1ly77a12wnzc8j0l6wqagkgo" class="odin-dark-nav-item text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="abt6207q1ly77a12wnzc8j0l6wqagkgo">Dark Mode icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+</svg>
+
+    Dark Mode
+</a>
+                <a class="odin-dark-nav-item text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center px-2 py-2 text-base font-medium " data-test-id="nav-logout" href="https://www.theodinproject.com/logout">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" role="img" aria-labelledby="al9y58afor1geugmsbs9azctfxkap2ze" class="text-gray-400 group-hover:text-gray-500 mr-4 h-6 w-6"><title id="al9y58afor1geugmsbs9azctfxkap2ze">Log out icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+</svg>
+
+    Log out
+</a>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="flex-shrink-0 w-14" aria-hidden="true">
+      <!-- Force sidebar to shrink to fit close icon -->
+    </div>
+  </div>
+
+
+
+<nav>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-3">
+    <div class="flex justify-between">
+      <div class="flex">
+        <div class="flex-shrink-0 flex items-center">
+          <a class="logo" href="https://www.theodinproject.com/">
+            <img alt="Odin Logo" class="block lg:hidden h-15 w-auto text-red-500" src="./Project_ Landing Page _ The Odin Project_files/odin-icon-b5b31c073f7417a257003166c98cc23743654715305910c068b93a3bf4d3065d.svg">
+</a>
+          <a href="https://www.theodinproject.com/">
+  <svg xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="a6hdms60wua3jhynesn80ezyexazhz8u" class="hidden lg:block h-15 w-auto text-gray-800"><title id="a6hdms60wua3jhynesn80ezyexazhz8u">Odin Logo</title>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3"></path>
+<ellipse cx="27.7849" cy="27.1223" rx="1.26005" ry="1.24284" fill="#353535"></ellipse>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.446 25.7092C19.446 25.2752 19.0891 24.9233 18.6493 24.9233C17.638 24.9233 15.9034 24.9233 14.8922 24.9233C14.4523 24.9233 14.0955 25.2752 14.0955 25.7092C14.0955 26.3856 14.0955 27.3716 14.0955 28.1426C14.0955 28.7935 14.6305 29.3212 15.2902 29.3212C15.6995 29.3212 16.1763 29.3212 16.6578 29.3212C17.3973 29.3212 18.1062 29.0314 18.6295 28.5155C19.1522 28.0001 19.446 27.3004 19.446 26.5712C19.446 26.2585 19.446 25.9621 19.446 25.7092Z" fill="#A78347"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.0004 4.5308L43.8517 0L39.0002 18L35.0002 22L35.0004 4.5308Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.8514 4.5308L0.000132561 0L4.85156 18L8.85156 22L8.8514 4.5308Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.442 12.7438C35.442 12.7438 28.7539 8.34589 22.0657 8.34589C15.3776 8.34589 8.68945 12.7438 8.68945 12.7438V25.9373L10.473 29.4556C11.7527 24.5929 17.5445 22.5672 21.576 25.5723L22.0657 25.9373L22.5554 25.5723C26.587 22.5672 32.3788 24.5929 33.6585 29.4556L35.442 25.9373V12.7438Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6068 32.5341L14.0398 53.2041L9.12134 49.6858L13.148 34.7331L17.6068 32.5341Z" fill="#D4D4D4"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5243 32.5341L30.0913 53.2041L35.0098 49.6858L30.9831 34.7331L26.5243 32.5341Z" fill="#D5D5D5"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68933 25.9373L5.12231 39.1309L9.58108 47.9267L13.1481 34.7331L8.68933 25.9373Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.4418 25.9373L39.0088 39.1309L34.55 47.9267L30.983 34.7331L35.4418 25.9373Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6069 32.5341L13.594 54.0837L22.0656 58.4815L30.5373 54.0837L26.5244 32.5341L22.3983 30.4992L22.0656 30.3352L17.6069 32.5341Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.6636 33.4137H20.5425C20.5425 33.4137 20.5425 33.9348 20.5425 34.514C20.5425 34.9222 20.707 35.3131 20.9995 35.6016C21.292 35.8901 21.6884 36.0524 22.1022 36.0524C22.1026 36.0524 22.1035 36.0524 22.1039 36.0524C22.5177 36.0524 22.9141 35.8901 23.2066 35.6016C23.4991 35.3131 23.6636 34.9222 23.6636 34.514C23.6636 33.9348 23.6636 33.4137 23.6636 33.4137Z" fill="#353535"></path>
+<path d="M68.808 20.384L67.704 20.456C67.368 20.456 67.056 20.456 66.696 20.432C66.504 20.432 66.288 20.6 66.144 20.6L65.688 20.408L63.36 20.288L63.288 22.256L63.576 22.544L65.04 22.496C65.112 22.496 65.256 22.472 65.424 22.424L65.544 22.304L66.072 22.376L66.216 23.36L66.12 24.896L66.264 26.024L66.144 30.92L66.024 34.304L66.24 34.544L65.88 36.056V37.904L67.152 38.096L67.824 37.976L68.52 37.592L68.328 35.888V31.376L68.04 30.92L68.064 30.896L68.28 29.456L68.256 27.608V27.2C68.256 27.032 68.232 26.816 68.232 26.624C68.208 26.48 68.208 25.88 68.208 25.664L68.256 23.888L68.16 23.36L68.304 22.352H69.048L69.768 22.4L70.008 22.472H71.088L71.16 21.344L71.016 20.336L68.808 20.384ZM73.2638 33.992L73.3118 35.504L73.6478 35.864L73.2638 36.32L73.1918 37.928L74.7038 38.072L75.6878 38.024L75.7118 37.136L75.6398 36.056L75.4958 34.784L75.5198 34.712L75.6398 30.536L77.5118 29.744H77.5358L78.9278 29.432L78.9038 29.864L78.9758 30.2L78.9278 33.896L79.2878 34.28L79.0478 34.496L78.8798 37.184L79.1918 38.024H80.5838L81.4718 37.976L81.4238 36.656L81.2558 36.056L81.2078 32.984L81.1598 28.688L81.1118 28.208L81.0398 27.128L81.1598 24.872L80.9438 24.176L81.1838 23.864L81.2078 22.952V22.976L81.3518 21.608L81.4238 20.408L80.0558 20.36L79.1678 20.336L78.8078 21.032L78.9278 21.992L78.9758 24.152L79.0478 26.336L78.9518 26.984L78.6878 27.104L78.2318 27.32L77.2478 27.752L77.0318 28.016L76.6478 27.872L75.6398 28.232L75.5918 28.256L75.3758 25.928L75.4718 24.344L75.2078 24.128L75.4958 23.672L75.6158 22.208L75.7118 20.48L73.6478 20.216L73.0718 20.6L73.2398 22.088L73.1678 22.568L73.2398 24.152L73.4078 25.64L73.3118 27.992L73.4798 30.704L73.2638 33.992ZM90.8258 22.616L90.8738 21.272L90.8498 20.336L88.4738 20.36L87.5378 20.552L87.2018 20.36H85.8338L84.7058 20.504L84.8258 22.208L85.0898 22.52L84.8258 22.928L84.8498 24.152L84.8258 26.024V27.8L84.7538 28.688L84.9458 31.064L84.8498 31.256L84.8738 32.552V33.104L85.0898 33.392L84.8018 34.016L84.7778 35.12L84.8018 35.384L84.6578 37.016L84.7778 38L86.5778 38.024L86.7698 37.904H87.6098L88.9778 38.048L90.5618 38.072L91.1138 37.832L91.2098 36.944L91.2578 35.744L90.0578 35.72L89.4578 35.912L87.5378 35.936L87.3458 35.888L87.1298 35.84L87.0818 33.512L87.0578 33.464L87.1298 33.248L86.9858 32.552L87.0818 30.08H87.4658L88.9778 30.128L90.1538 30.176L90.2018 29.192L90.3458 28.472L90.0338 27.872L88.8098 27.992L87.8738 28.04L86.9858 27.992L86.9378 27.056L86.6978 26.864L86.9618 26.432L87.0818 25.712V23.336L87.1298 22.736V22.472H87.3458L88.6658 22.52L89.0498 22.448L89.1218 22.424L89.6978 22.616H90.8258ZM102.331 20.312L102.115 20.336H101.227L101.179 20.504L101.035 21.224L100.939 21.368L99.6429 24.608L99.7629 24.872L99.3309 25.184L98.0349 28.328L97.8429 28.448L97.8909 29.96L98.4669 31.184L99.3309 33.224L100.051 34.712H100.315L100.243 35.12L101.083 37.208L101.107 38L103.291 38.024L103.339 37.76L103.627 36.992L104.923 33.92L105.475 32.768L105.499 32.384L105.691 32.144L106.867 29.768L106.939 28.448L106.123 26.672L105.475 25.232H105.235L105.115 24.584L103.891 21.584L103.411 20.264L102.331 20.312ZM102.379 34.952L101.323 32.192L100.843 31.208L100.363 30.872L100.603 30.584L100.387 29.888L100.075 29.096L100.051 28.808L100.843 26.744L100.675 26.36L101.011 26.264L102.331 22.784L102.475 23.24L103.027 24.704L103.459 24.968L103.243 25.256L104.179 27.68L104.467 28.496L104.659 29.096L103.483 31.976L103.507 32.408H103.531L103.243 32.696L102.475 35.216L102.379 34.952ZM113.227 35.72L114.067 34.016L116.539 30.224L116.971 29.504L116.947 27.752L116.515 27.2L116.539 27.248L114.715 24.824L114.091 23.72L113.251 22.88L112.987 22.088L111.499 20.048L110.227 20.432L109.195 20.744L109.219 21.632L109.291 22.88L109.531 23.192L109.291 23.648L109.315 29.936L109.459 30.872L109.315 36.248V36.224L109.267 37.832L110.827 38.048L111.619 38.264L113.227 35.72ZM111.451 26.744L111.379 23.264L111.523 23.432L113.899 27.248L114.379 27.632L114.475 28.208L114.907 28.856L114.475 29.552L113.683 30.872L112.675 32.816L112.867 33.032L112.435 33.248L111.379 34.952L111.355 35L111.379 33.704L111.475 28.952L111.091 27.824L111.451 26.744ZM119.431 27.56L119.359 28.88L119.287 29.624V34.112V34.976L119.575 35.384L119.287 35.864L118.951 38L120.055 38.024L120.559 38.048L121.615 37.712L121.639 36.824L121.591 36.368L121.543 36.008V29.36L121.279 29.192L121.495 28.688L121.447 28.088L121.351 27.152L121.423 25.928L121.495 22.784L121.615 22.184L121.735 20.432L120.175 20.336L119.047 20.408L119.167 21.608L119.383 21.728L119.191 22.16L119.263 26.96L119.431 27.56ZM133.115 35.888V35.12L132.947 29.864L132.683 29.072L132.875 28.064L133.115 22.16L133.163 20.528L132.179 20.36L130.787 20.384V22.304L131.027 22.64L130.787 23.384V25.448L129.995 24.152L129.803 24.056L129.203 23.096L127.043 20.12L125.147 20.648V21.896L125.243 24.392L125.339 25.76L125.243 30.752L125.459 31.232L125.267 31.928L125.123 35.336V35.744L125.195 35.96L125.027 37.88L126.059 38.072L127.475 38.024L127.523 36.488L127.451 36.152L127.475 33.656L127.259 32.744L127.379 31.88L127.427 26.408L127.139 26.096L127.115 26.048L127.451 25.184V23.888L128.075 24.752L129.059 26.12L129.755 26.96L130.091 27.488L130.427 27.848L130.811 28.496L130.835 30.992L130.907 31.448L130.835 31.568L130.811 33.872L130.835 36.152L130.811 38.024L131.627 38.072L132.947 38.048L133.259 37.232L133.115 35.888ZM147.393 28.76L148.161 28.016L148.905 27.104L148.953 25.448L146.457 22.808L145.953 22.64L145.857 22.232L143.697 20L142.929 20.288L141.777 20.792L141.825 22.4L141.945 23.384V27.32L141.897 27.44L141.873 33.44L142.161 33.752L141.945 34.496L141.681 37.928L143.073 38.072L144.273 38L144.129 35.024L143.745 34.688L144.129 34.112L144.081 32.456L144.297 32.216L145.905 30.392L147.393 28.76ZM144.105 27.128L143.841 26.648L144.081 25.904L144.057 24.752L144.081 23.048L145.473 24.608L145.689 24.752L145.857 25.088L146.889 26.24L146.505 26.792L146.265 27.392L146.001 27.32L144.801 28.736L144.105 29.48V27.128ZM153.466 30.608L154.426 32.552L154.642 33.104L155.53 34.784L155.818 34.928L155.794 35.336L156.634 37.256L157.21 38.192L159.154 37.112L159.178 36.416L158.386 35.576L157.954 34.664V34.688L157.618 33.992L157.474 33.92V33.608L156.514 31.976C156.346 31.736 156.202 31.616 156.01 31.4V30.992C155.866 30.704 155.578 30.296 155.41 29.96L156.082 29.048L156.49 28.544L157.258 27.632L158.362 26.288L158.53 24.848L157.378 23.792C157.354 23.792 156.97 23.912 156.946 23.888L156.802 23.288L152.986 19.976L151.09 20.744L151.186 22.808L151.306 27.392L151.114 27.872L151.162 29.12L151.258 31.928V32.864L151.474 33.176L151.114 34.112L150.97 37.928L152.554 38.072L153.514 37.688L153.49 35.696L153.418 35.48L153.346 33.08L153.322 30.464L153.466 30.608ZM153.37 28.352L153.274 26.216L153.226 25.952L153.178 25.808L153.082 25.376L153.274 24.92V24.68L153.322 22.832L155.53 25.016L155.698 25.136L156.178 25.736L155.914 26.072C155.602 26.504 155.026 27.248 154.69 27.656L153.49 29.144L153.322 29.24L153.37 28.352ZM164.323 20.312L164.107 20.336H163.219L163.171 20.504L163.027 21.224L162.931 21.368L161.635 24.608L161.755 24.872L161.323 25.184L160.027 28.328L159.835 28.448L159.883 29.96L160.459 31.184L161.323 33.224L162.043 34.712H162.307L162.235 35.12L163.075 37.208L163.099 38L165.283 38.024L165.331 37.76L165.619 36.992L166.915 33.92L167.467 32.768L167.491 32.384L167.683 32.144L168.859 29.768L168.931 28.448L168.115 26.672L167.467 25.232H167.227L167.107 24.584L165.883 21.584L165.403 20.264L164.323 20.312ZM164.371 34.952L163.315 32.192L162.835 31.208L162.355 30.872L162.595 30.584L162.379 29.888L162.067 29.096L162.043 28.808L162.835 26.744L162.667 26.36L163.003 26.264L164.323 22.784L164.467 23.24L165.019 24.704L165.451 24.968L165.235 25.256L166.171 27.68L166.459 28.496L166.651 29.096L165.475 31.976L165.499 32.408H165.523L165.235 32.696L164.467 35.216L164.371 34.952ZM171.71 27.608L171.59 28.928L171.614 30.416L171.638 30.752V31.688L171.542 34.304L171.59 34.52L171.23 35.024L170.174 35.72L169.118 36.152V37.4L170.438 38.384L172.214 36.944L172.19 36.464L172.838 36.368L173.606 35.696L173.99 35.024L173.702 30.896L173.51 30.176L173.774 29.984L173.678 23.288L173.966 21.176L173.654 20.336L171.374 20.384V21.728L171.806 21.968L171.494 22.352L171.566 26.408L171.71 27.608ZM183.502 22.616L183.55 21.272L183.526 20.336L181.15 20.36L180.214 20.552L179.878 20.36H178.51L177.382 20.504L177.502 22.208L177.766 22.52L177.502 22.928L177.526 24.152L177.502 26.024V27.8L177.43 28.688L177.622 31.064L177.526 31.256L177.55 32.552V33.104L177.766 33.392L177.478 34.016L177.454 35.12L177.478 35.384L177.334 37.016L177.454 38L179.254 38.024L179.446 37.904H180.286L181.654 38.048L183.238 38.072L183.79 37.832L183.886 36.944L183.934 35.744L182.734 35.72L182.134 35.912L180.214 35.936L180.022 35.888L179.806 35.84L179.758 33.512L179.734 33.464L179.806 33.248L179.662 32.552L179.758 30.08H180.142L181.654 30.128L182.83 30.176L182.878 29.192L183.022 28.472L182.71 27.872L181.486 27.992L180.55 28.04L179.662 27.992L179.614 27.056L179.374 26.864L179.638 26.432L179.758 25.712V23.336L179.806 22.736V22.472H180.022L181.342 22.52L181.726 22.448L181.798 22.424L182.374 22.616H183.502ZM185.362 30.896L186.226 32.456L187.33 33.488L187.138 33.92L188.962 36.752L189.01 37.04L189.826 38.312L190.642 37.784L191.89 36.752L191.338 35.864L190.09 34.232L188.986 32.36L188.098 30.992L187.882 30.512L187.546 30.176L187.306 29.72L186.946 29.024L187.258 28.448L187.714 27.632L188.506 26.384L189.946 24.248L190.066 23.6L190.474 23.336L191.146 22.4L191.818 21.2L190.018 20L189.178 20.984L189.154 21.176L187.81 23.384V23.48L187.21 24.44V25.016L186.346 25.856L184.786 28.496L184.81 30.032L185.362 30.896ZM198.12 20.384L197.016 20.456C196.68 20.456 196.368 20.456 196.008 20.432C195.816 20.432 195.6 20.6 195.456 20.6L195 20.408L192.672 20.288L192.6 22.256L192.888 22.544L194.352 22.496C194.424 22.496 194.568 22.472 194.736 22.424L194.856 22.304L195.384 22.376L195.528 23.36L195.432 24.896L195.576 26.024L195.456 30.92L195.336 34.304L195.552 34.544L195.192 36.056V37.904L196.464 38.096L197.136 37.976L197.832 37.592L197.64 35.888V31.376L197.352 30.92L197.376 30.896L197.592 29.456L197.568 27.608V27.2C197.568 27.032 197.544 26.816 197.544 26.624C197.52 26.48 197.52 25.88 197.52 25.664L197.568 23.888L197.472 23.36L197.616 22.352H198.36L199.08 22.4L199.32 22.472H200.4L200.472 21.344L200.328 20.336L198.12 20.384Z" fill="currentColor"></path>
+</svg>
+
+</a>
+        </div>
+
+      </div>
+      <div class="hidden md:ml-6 md:flex sm:items-center">
+          <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+              <a class="odin-dark-nav-item border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-md font-semibold " data-test-id="nav-all-paths" href="https://www.theodinproject.com/paths">All Paths</a>
+
+              <a class="odin-dark-nav-item border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-md font-semibold " data-test-id="nav-community" href="https://discord.gg/fbFCkYabZB">Community</a>
+
+              <a class="odin-dark-nav-item border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-md font-semibold " data-test-id="nav-dashboard" href="https://www.theodinproject.com/">Dashboard</a>
+
+          </div>
+
+          <a class="odin-dark-nav-item ml-3 bg-white p-1 rounded-full text-gray-400 relative hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500" data-test-id="navbar-notification-icon" href="https://www.theodinproject.com/notifications">
+            <span class="sr-only">View notifications</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="img" aria-labelledby="a77xary93ruudqq6vprdqpiqbsvqpnfm" class="h-6 w-6"><title id="a77xary93ruudqq6vprdqpiqbsvqpnfm">Notifications icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+</svg>
+
+</a>
+          <div class="ml-3 relative" data-controller="dropdown">
+  <div>
+    <button type="button" data-action="click-&gt;dropdown#toggle" class="bg-white rounded-full flex text-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gold-500" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+      <span class="sr-only">Open user menu</span>
+        <span class="inline-block rounded-full overflow-hidden bg-gray-100 h-9 w-9">
+   <svg fill="currentColor" viewBox="0 0 24 24" role="img" aria-labelledby="afld2g8st5skiof1lms3t7jzz5fxc6p6" class="h-full w-full text-gray-300"><title id="afld2g8st5skiof1lms3t7jzz5fxc6p6">default user avatar</title>
+  <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z"></path>
+</svg>
+
+  </span>
+
+    </button>
+  </div>
+
+  <div data-dropdown-target="content" data-transition-enter="transition ease-out duration-200" data-transition-enter-start="transform opacity-0 scale-95" data-transition-enter-end="transform opacity-100 scale-100" data-transition-leave="transition ease-in duration-75" data-transition-leave-start="transform opacity-100 scale-100" data-transition-leave-end="transform opacity-10 scale-95" class="odin-dark-dropdown-menu hidden origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+    <a class="odin-dark-nav-item text-gray-700 group flex items-center px-3 py-2 text-sm " href="https://www.theodinproject.com/users/edit">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" role="img" aria-labelledby="akivv9xl9dd115zj3vtu8b9xdc3xuz7s" class="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"><title id="akivv9xl9dd115zj3vtu8b9xdc3xuz7s">settings icon</title>
+  <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"></path>
+</svg>
+
+      Settings
+</a>
+      <a class="odin-dark-nav-item text-gray-700 group flex items-center px-3 py-2 text-sm" rel="nofollow" data-method="put" href="https://www.theodinproject.com/themes?theme=dark">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="overflow:visible" role="img" aria-labelledby="ahi8a09asjxl1jqju9p4m7w7ni9tyevk" class="mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500"><title id="ahi8a09asjxl1jqju9p4m7w7ni9tyevk">theme icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+</svg>
+
+    Dark Mode
+</a>
+
+    <a class="odin-dark-nav-item text-gray-700 group flex items-center px-3 py-2 text-sm" href="https://www.theodinproject.com/logout">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3 h-5 w-5 text-gray-400 group-hover:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" role="img" aria-labelledby="afzjoc92ki6myzetda2xzgcwizazr6dq"><title id="afzjoc92ki6myzetda2xzgcwizazr6dq">settings icon</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+</svg>
+
+      Log out
+</a>  </div>
+</div>
+
+      </div>
+
+      <div class="-mr-2 flex items-center md:hidden">
+        <button type="button" data-controller="custom-events" data-action="custom-events#emit" data-custom-events-event-name-value="openMobileMenu" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold-500" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open mobile menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" data-mobile-menu-target="openButton" role="img" aria-labelledby="aof6jtuebqbfse50cuspaiwc32n1m7t1" class="block h-6 w-6"><title id="aof6jtuebqbfse50cuspaiwc32n1m7t1">Open mobile menu button</title>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+</div>
+
+
+
+
+
+
+    
+
+<div class="container lesson-container lesson tmp-container-spacer">
+  <div class="row">
+    <div class="col-12">
+      <div class="lesson-header">
+        <div class="banner">
+  <div class="banner__badge">
+      <a href="https://www.theodinproject.com/paths/foundations/courses/foundations">
+    <div data-controller="progress" data-progress-url-value="/courses/progress/30" data-progress-percent-value="60" data-action="update-progress@window-&gt;progress#fetchProgress" class="course-badge progress-circle ">
+      <div class="progress-circle__inner" data-test-id="progress-badge">
+        <img alt="Foundations badge" class="progress-circle__image" src="./Project_ Landing Page _ The Odin Project_files/badge-foundations-borderless-6b3e79880875b4c76e3aadbc44460e299dec20b4888ede320949ab187f983eb2.svg">
+        <p class="bold progress-circle__content" data-progress-target="percentage">60%</p>
+        <p class="progress-circle__content">COMPLETE</p>
+      </div>
+    </div>
+</a>
+  </div>
+
+  <a class="course-card-header__link" href="https://www.theodinproject.com/paths/foundations/courses/foundations">
+    <h1 class="banner__title text-4xl font-light mx-auto" data-test-id="course-title-header">Foundations</h1>
+</a></div>
+
+        <h2 class="lesson-header__title accent" data-test-id="lesson-title-header">Project: Landing Page</h2>
+      </div>
+    </div>
+
+    <div class="col-lg-3 lesson-nav-wrapper">
+      <div>
+        <div class="d-none d-lg-block d-xl-block lesson-navigation"><div class="lesson-navigation__item"><div class="lesson-navigation__circle"></div><div class="lesson-navigation__title"><a class="lesson-navigation__link grey" href="https://www.theodinproject.com/lessons/foundations-landing-page#introduction">Introduction</a></div></div><div class="lesson-navigation__item"><div class="lesson-navigation__circle active"></div><div class="lesson-navigation__title"><a class="lesson-navigation__link grey active" href="https://www.theodinproject.com/lessons/foundations-landing-page#assignment">Assignment</a></div></div></div>
+      </div>
+    </div>
+
+    <div class="col-xl-6 col-lg-8">
+      <div class="lesson-content">
+        <div id="introduction" class="scrollspy"><h3><a href="https://www.theodinproject.com/lessons/foundations-landing-page#introduction" class="internal-link">Introduction</a></h3><p>For this project you’ll be creating an entire web page from a design we’ll provide for you. If you’ve been following along you should have the skills you need to accomplish this, but it may not be easy!</p><p>The design we’re providing you comes in the form of 2 images: one is an image of the complete website, and one has some details about some of the fonts and colors we’ve used.</p><p>Do <em>not</em> be afraid to use google or go back to previous lessons to look something up. <strong>Real-life, professional developers use google <em>constantly</em> for things that they have been doing for years.</strong> At this point it is not expected that you will have everything memorized, so don’t worry about it. Additionally, there are a few small details that you may not have encountered in our lessons yet. <em>This is by design.</em> These details are minor, and easily searched (e.g. google <code>css rounded corners</code>).</p><p>Get your project as close as you can to the design, but do not worry about getting it pixel-perfect. Don’t get out your ruler or count pixels to find the exact margins between the various sections. The point of this assignment is to create something from scratch and get the various elements in more or less the right position relative to the rest. It doesn’t matter if you use <code>margin: 24px</code> when the design actually has <code>margin: 48px</code>.</p><p><em>Finally</em>, feel free to substitute your own content into this design. The images have some meaningless dummy content, but if you want to make up a business and personalize this page, please feel free to do so! Insert actual images in the placeholders, and feel free to play with the colors and fonts a bit too.</p><blockquote>
+  <h4 id="a-note-about-images-on-the-web">A note about images on the web</h4>
+  <p>You do not have the legal right to use just any image that you find on the web. There are many free images to be found, but make sure that the image you use is actually free for you to use, and make sure to credit the creator of the image in your project. An easy way to give credit is to put the creator’s name and contact info in a README file in your repository.
+Some good places to find free-to-use images on the web include <a href="https://www.pexels.com/" target="_blank" rel="noreferrer">Pexels</a>, <a href="https://pixabay.com/" target="_blank" rel="noreferrer">Pixabay</a>, and <a href="https://unsplash.com/" target="_blank" rel="noreferrer">Unsplash</a>.</p>
+</blockquote></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="setting-up-your-projects-github-repository"><h3><a href="https://www.theodinproject.com/lessons/foundations-landing-page#setting-up-your-projects-github-repository" class="internal-link">Setting up your project’s GitHub repository</a></h3><p>As we did in the Recipe project, go ahead and set up a git repository before beginning work on this project. Git and GitHub are going to act as a portfolio for you moving forward, so you need to keep everything in there! Look back at the recipe project if you need a reminder on how to set it up.</p></div>
+
+
+
+<div id="warning-about-looking-at-other-peoples-finished-project-code-before-you-have-completed-your-own"><h3><a href="https://www.theodinproject.com/lessons/foundations-landing-page#warning-about-looking-at-other-peoples-finished-project-code-before-you-have-completed-your-own" class="internal-link">Warning About Looking at Other People’s Finished Project Code Before You have Completed Your Own</a></h3><p>All of our projects have a “Student Solutions” section at the bottom for people to post their completed code and live websites for the projects. These are here for you both to compare your completed code with and see what other routes people have chosen to take with their project code and designs.</p><p>We know it may be tempting to look at the solutions when you get stuck or don’t know where to start, but <strong>don’t</strong> do it! Here are some reasons why:</p><ul>
+  <li>All of the submitted projects are <em>other learners’</em> solutions. This means they are written by other people who are also still learning and may not necessarily be representative of “best practice” or high quality code.</li>
+  <li>Looking at solutions robs you of the chance to develop your problem solving and researching skills. In the real world, there will not always be “solutions” for you to look at, and you will have to come up with your own.</li>
+  <li>There are many different ways to achieve the same end result - it is not “one size fits all.”</li>
+  <li>An Analogy: “Learning how to code from looking at completed code is like learning how to make pizza dough from looking at a baked pizza.”  There is a lot more that goes into it than you might assume from only seeing the final product and not the process that led to it.</li>
+</ul><p>Once you have completed your project, feel free to look at the other solutions to see alternative ways the project was completed.</p><p><strong>DO NOT PEEK. Come ask for help in our discord server!</strong></p></div>
+
+
+
+
+
+
+
+
+
+
+
+<div id="assignment" class="scrollspy"><h3><a href="https://www.theodinproject.com/lessons/foundations-landing-page#assignment" class="internal-link">Assignment</a></h3><div class="lesson-content__panel">
+  <p>Don’t forget to commit early &amp; often! You can <a href="https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/commit-messages" target="_blank" rel="noreferrer">reference the Commit Message lesson here</a>!</p>
+
+  <ol>
+    <li>Download the design images and take a look at what you’re going to be creating here. <a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/project/odin-project.png" target="_blank" rel="noreferrer">Image One (Full Design)</a>, <a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/project/colors_and_stuff.png" target="_blank" rel="noreferrer">Image Two (Color and Fonts)</a>
+      <ol>
+        <li>The font that’s being used in the images is roboto.</li>
+        <li>Hero text is the statement that appears at the top of a web page.</li>
+      </ol>
+    </li>
+    <li>There are many ways to tackle a project like this, and it can be overwhelming to look at a blank HTML document and not know where to start. Our suggestion: take it one section at a time. The website you’re creating has 4 main sections (and a footer), so pick one and get it into pretty good shape before moving on. Starting at the top is always a solid plan.</li>
+    <li>For the section you’re working on, begin by getting all the content onto the page before beginning to style it. In other words, do the HTML and <em>then</em> do the CSS. You’ll probably have to go back to the HTML once you start styling, but bouncing back and forth from the beginning will take more time and may cause more frustration. (Note: you don’t need to use more than one stylesheet. Using only one CSS file is adequate for this project).</li>
+    <li>Many of the elements on this page are very similar to things you saw in our flexbox exercises… feel free to go back to those if you need a refresher.</li>
+    <li>Do not worry about making your project look nice on a mobile device. We’ll learn that later.</li>
+    <li>When you finish, don’t forget to push it up to GitHub!</li>
+  </ol>
+</div></div>
+
+
+
+<div id="viewing-your-project-on-the-web"><h3><a href="https://www.theodinproject.com/lessons/foundations-landing-page#viewing-your-project-on-the-web" class="internal-link">Viewing your project on the web</a></h3><p>If you want to show your work (the project) to others, or submit a solution below, you will need to publish your site so that others can access it from the web, rather than just on your local machine. The good news is that if you have your project on GitHub (as described above), doing this is incredibly simple.</p><p>GitHub allows you to publish web projects directly from a GitHub repository. Doing this will allow you to access your project from <code>your-github-username.github.io/your-github-repo-name</code></p><p>There are a couple of ways to go about publishing your project, but the simplest is the following:</p><ul>
+  <li>Make sure that the main HTML file of your project is called <code>index.html</code>. If it is not, you need to rename it.</li>
+  <li>Go to your GitHub repo on the web and click the <strong>Settings</strong> button.</li>
+  <li>Click on <strong>Pages</strong> on the left side bar.</li>
+  <li>Change the <strong>Source</strong> from <em>none</em> to <em>main branch</em> and click Save.</li>
+  <li>It may take a few minutes (the GitHub website says up to 10), but your project should be accessible over the web from <code>your-github-username.github.io/your-github-repo-name</code> (obviously substituting your own details in the link).</li>
+</ul></div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lesson-functions">
+  <div class="container">
+    <div class="card-main">
+
+        <div data-react-class="project-submissions/index" data-react-props="{&quot;userId&quot;:292141,&quot;course&quot;:{&quot;id&quot;:30,&quot;title&quot;:&quot;Foundations&quot;,&quot;description&quot;:&quot;This is where it all begins! A hands-on introduction to all of the essential tools you&#39;ll need to build real, working websites. You&#39;ll learn what web developers actually do – the foundations you&#39;ll need for later courses.&quot;,&quot;created_at&quot;:&quot;2014-02-06T19:45:02.543Z&quot;,&quot;updated_at&quot;:&quot;2021-03-24T08:08:26.916Z&quot;,&quot;position&quot;:1,&quot;slug&quot;:&quot;foundations&quot;,&quot;identifier_uuid&quot;:&quot;783e9b72-a447-4f49-a9b3-b62826d68e04&quot;,&quot;path_id&quot;:4},&quot;lesson&quot;:{&quot;id&quot;:790,&quot;title&quot;:&quot;Landing Page&quot;,&quot;url&quot;:&quot;/foundations/html_css/project/html-css-foundations-project.md&quot;,&quot;position&quot;:30,&quot;description&quot;:&quot;Build a complete landing page from a given web design.&quot;,&quot;is_project&quot;:true,&quot;section_id&quot;:172,&quot;created_at&quot;:&quot;2021-09-07T18:12:18.091Z&quot;,&quot;updated_at&quot;:&quot;2022-03-27T12:09:43.645Z&quot;,&quot;content&quot;:&quot;\u003ch3 id=\&quot;introduction\&quot;\u003eIntroduction\u003c/h3\u003e\n\n\u003cp\u003eFor this project you’ll be creating an entire web page from a design we’ll provide for you. If you’ve been following along you should have the skills you need to accomplish this, but it may not be easy!\u003c/p\u003e\n\n\u003cp\u003eThe design we’re providing you comes in the form of 2 images: one is an image of the complete website, and one has some details about some of the fonts and colors we’ve used.\u003c/p\u003e\n\n\u003cp\u003eDo \u003cem\u003enot\u003c/em\u003e be afraid to use google or go back to previous lessons to look something up. \u003cstrong\u003eReal-life, professional developers use google \u003cem\u003econstantly\u003c/em\u003e for things that they have been doing for years.\u003c/strong\u003e At this point it is not expected that you will have everything memorized, so don’t worry about it. Additionally, there are a few small details that you may not have encountered in our lessons yet. \u003cem\u003eThis is by design.\u003c/em\u003e These details are minor, and easily searched (e.g. google \u003ccode\u003ecss rounded corners\u003c/code\u003e).\u003c/p\u003e\n\n\u003cp\u003eGet your project as close as you can to the design, but do not worry about getting it pixel-perfect. Don’t get out your ruler or count pixels to find the exact margins between the various sections. The point of this assignment is to create something from scratch and get the various elements in more or less the right position relative to the rest. It doesn’t matter if you use \u003ccode\u003emargin: 24px\u003c/code\u003e when the design actually has \u003ccode\u003emargin: 48px\u003c/code\u003e.\u003c/p\u003e\n\n\u003cp\u003e\u003cem\u003eFinally\u003c/em\u003e, feel free to substitute your own content into this design. The images have some meaningless dummy content, but if you want to make up a business and personalize this page, please feel free to do so! Insert actual images in the placeholders, and feel free to play with the colors and fonts a bit too.\u003c/p\u003e\n\n\u003cblockquote\u003e\n  \u003ch4 id=\&quot;a-note-about-images-on-the-web\&quot;\u003eA note about images on the web\u003c/h4\u003e\n  \u003cp\u003eYou do not have the legal right to use just any image that you find on the web. There are many free images to be found, but make sure that the image you use is actually free for you to use, and make sure to credit the creator of the image in your project. An easy way to give credit is to put the creator’s name and contact info in a README file in your repository.\nSome good places to find free-to-use images on the web include \u003ca href=\&quot;https://www.pexels.com/\&quot;\u003ePexels\u003c/a\u003e, \u003ca href=\&quot;https://pixabay.com/\&quot;\u003ePixabay\u003c/a\u003e, and \u003ca href=\&quot;https://unsplash.com/\&quot;\u003eUnsplash\u003c/a\u003e.\u003c/p\u003e\n\u003c/blockquote\u003e\n\n\u003ch3 id=\&quot;setting-up-your-projects-github-repository\&quot;\u003eSetting up your project’s GitHub repository\u003c/h3\u003e\n\n\u003cp\u003eAs we did in the Recipe project, go ahead and set up a git repository before beginning work on this project. Git and GitHub are going to act as a portfolio for you moving forward, so you need to keep everything in there! Look back at the recipe project if you need a reminder on how to set it up.\u003c/p\u003e\n\n\u003ch3 id=\&quot;warning-about-looking-at-other-peoples-finished-project-code-before-you-have-completed-your-own\&quot;\u003eWarning About Looking at Other People’s Finished Project Code Before You have Completed Your Own\u003c/h3\u003e\n\n\u003cp\u003eAll of our projects have a “Student Solutions” section at the bottom for people to post their completed code and live websites for the projects. These are here for you both to compare your completed code with and see what other routes people have chosen to take with their project code and designs.\u003c/p\u003e\n\n\u003cp\u003eWe know it may be tempting to look at the solutions when you get stuck or don’t know where to start, but \u003cstrong\u003edon’t\u003c/strong\u003e do it! Here are some reasons why:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eAll of the submitted projects are \u003cem\u003eother learners’\u003c/em\u003e solutions. This means they are written by other people who are also still learning and may not necessarily be representative of “best practice” or high quality code.\u003c/li\u003e\n  \u003cli\u003eLooking at solutions robs you of the chance to develop your problem solving and researching skills. In the real world, there will not always be “solutions” for you to look at, and you will have to come up with your own.\u003c/li\u003e\n  \u003cli\u003eThere are many different ways to achieve the same end result - it is not “one size fits all.”\u003c/li\u003e\n  \u003cli\u003eAn Analogy: “Learning how to code from looking at completed code is like learning how to make pizza dough from looking at a baked pizza.”  There is a lot more that goes into it than you might assume from only seeing the final product and not the process that led to it.\u003c/li\u003e\n\u003c/ul\u003e\n\n\u003cp\u003eOnce you have completed your project, feel free to look at the other solutions to see alternative ways the project was completed.\u003c/p\u003e\n\n\u003cp\u003e\u003cstrong\u003eDO NOT PEEK. Come ask for help in our discord server!\u003c/strong\u003e\u003c/p\u003e\n\n\u003ch3 id=\&quot;assignment\&quot;\u003eAssignment\u003c/h3\u003e\n\n\u003cdiv class=\&quot;lesson-content__panel\&quot;\u003e\n  \u003cp\u003eDon’t forget to commit early \u0026amp; often! You can \u003ca href=\&quot;https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/commit-messages\&quot;\u003ereference the Commit Message lesson here\u003c/a\u003e!\u003c/p\u003e\n\n  \u003col\u003e\n    \u003cli\u003eDownload the design images and take a look at what you’re going to be creating here. \u003ca href=\&quot;https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/project/odin-project.png\&quot;\u003eImage One (Full Design)\u003c/a\u003e, \u003ca href=\&quot;https://cdn.statically.io/gh/TheOdinProject/curriculum/main/foundations/html_css/project/colors_and_stuff.png\&quot;\u003eImage Two (Color and Fonts)\u003c/a\u003e\n      \u003col\u003e\n        \u003cli\u003eThe font that’s being used in the images is roboto.\u003c/li\u003e\n        \u003cli\u003eHero text is the statement that appears at the top of a web page.\u003c/li\u003e\n      \u003c/ol\u003e\n    \u003c/li\u003e\n    \u003cli\u003eThere are many ways to tackle a project like this, and it can be overwhelming to look at a blank HTML document and not know where to start. Our suggestion: take it one section at a time. The website you’re creating has 4 main sections (and a footer), so pick one and get it into pretty good shape before moving on. Starting at the top is always a solid plan.\u003c/li\u003e\n    \u003cli\u003eFor the section you’re working on, begin by getting all the content onto the page before beginning to style it. In other words, do the HTML and \u003cem\u003ethen\u003c/em\u003e do the CSS. You’ll probably have to go back to the HTML once you start styling, but bouncing back and forth from the beginning will take more time and may cause more frustration. (Note: you don’t need to use more than one stylesheet. Using only one CSS file is adequate for this project).\u003c/li\u003e\n    \u003cli\u003eMany of the elements on this page are very similar to things you saw in our flexbox exercises… feel free to go back to those if you need a refresher.\u003c/li\u003e\n    \u003cli\u003eDo not worry about making your project look nice on a mobile device. We’ll learn that later.\u003c/li\u003e\n    \u003cli\u003eWhen you finish, don’t forget to push it up to GitHub!\u003c/li\u003e\n  \u003c/ol\u003e\n\u003c/div\u003e\n\n\u003ch3 id=\&quot;viewing-your-project-on-the-web\&quot;\u003eViewing your project on the web\u003c/h3\u003e\n\n\u003cp\u003eIf you want to show your work (the project) to others, or submit a solution below, you will need to publish your site so that others can access it from the web, rather than just on your local machine. The good news is that if you have your project on GitHub (as described above), doing this is incredibly simple.\u003c/p\u003e\n\n\u003cp\u003eGitHub allows you to publish web projects directly from a GitHub repository. Doing this will allow you to access your project from \u003ccode\u003eyour-github-username.github.io/your-github-repo-name\u003c/code\u003e\u003c/p\u003e\n\n\u003cp\u003eThere are a couple of ways to go about publishing your project, but the simplest is the following:\u003c/p\u003e\n\n\u003cul\u003e\n  \u003cli\u003eMake sure that the main HTML file of your project is called \u003ccode\u003eindex.html\u003c/code\u003e. If it is not, you need to rename it.\u003c/li\u003e\n  \u003cli\u003eGo to your GitHub repo on the web and click the \u003cstrong\u003eSettings\u003c/strong\u003e button.\u003c/li\u003e\n  \u003cli\u003eClick on \u003cstrong\u003ePages\u003c/strong\u003e on the left side bar.\u003c/li\u003e\n  \u003cli\u003eChange the \u003cstrong\u003eSource\u003c/strong\u003e from \u003cem\u003enone\u003c/em\u003e to \u003cem\u003emain branch\u003c/em\u003e and click Save.\u003c/li\u003e\n  \u003cli\u003eIt may take a few minutes (the GitHub website says up to 10), but your project should be accessible over the web from \u003ccode\u003eyour-github-username.github.io/your-github-repo-name\u003c/code\u003e (obviously substituting your own details in the link).\u003c/li\u003e\n\u003c/ul\u003e\n&quot;,&quot;slug&quot;:&quot;foundations-landing-page&quot;,&quot;accepts_submission&quot;:true,&quot;has_live_preview&quot;:true,&quot;choose_path_lesson&quot;:false,&quot;identifier_uuid&quot;:&quot;22e0c585-c146-4dab-9dc0-17a20f0ecbc5&quot;,&quot;course_id&quot;:30,&quot;installation_lesson&quot;:false},&quot;submissions&quot;:[{&quot;id&quot;:32200,&quot;repo_url&quot;:&quot;https://github.com/Lyrenide/Hakurei_Shrine&quot;,&quot;live_preview_url&quot;:&quot;https://lyrenide.github.io/Hakurei_Shrine/&quot;,&quot;is_public&quot;:true,&quot;user_name&quot;:&quot;Lyrenide&quot;,&quot;user_id&quot;:449055,&quot;lesson_id&quot;:790,&quot;lesson_title&quot;:&quot;Landing Page&quot;,&quot;lesson_path&quot;:&quot;/lessons/foundations-landing-page&quot;,&quot;lesson_has_live_preview&quot;:true,&quot;likes&quot;:589,&quot;is_liked_by_current_user&quot;:false},{&quot;id&quot;:20926,&quot;repo_url&quot;:&quot;https://github.com/Lun-Dev/Landing-Page&quot;,&quot;live_preview_url&quot;:&quot;https://lun-dev.github.io/Landing-Page/&quot;,&quot;is_public&quot;:true,&quot;user_name&quot;:&quot; Lun-Dev&quot;,&quot;user_id&quot;:306699,&quot;lesson_id&quot;:790,&quot;lesson_title&quot;:&quot;Landing Page&quot;,&quot;lesson_path&quot;:&quot;/lessons/foundations-landing-page&quot;,&quot;lesson_has_live_preview&quot;:true,&quot;likes&quot;:379,&quot;is_liked_by_current_user&quot;:false},{&quot;id&quot;:21208,&quot;repo_url&quot;:&quot;https://github.com/othercatt/odin-landing-page&quot;,&quot;live_preview_url&quot;:&quot;https://othercatt.github.io/odin-landing-page/&quot;,&quot;is_public&quot;:true,&quot;user_name&quot;:&quot;Othercatt&quot;,&quot;user_id&quot;:453023,&quot;lesson_id&quot;:790,&quot;lesson_title&quot;:&quot;Landing Page&quot;,&quot;lesson_path&quot;:&quot;/lessons/foundations-landing-page&quot;,&quot;lesson_has_live_preview&quot;:true,&quot;likes&quot;:233,&quot;is_liked_by_current_user&quot;:false},{&quot;id&quot;:22596,&quot;repo_url&quot;:&quot;https://github.com/Appletri/landing-page&quot;,&quot;live_preview_url&quot;:&quot;https://Appletri.github.io/landing-page/&quot;,&quot;is_public&quot;:true,&quot;user_name&quot;:&quot;Appletri&quot;,&quot;user_id&quot;:443566,&quot;lesson_id&quot;:790,&quot;lesson_title&quot;:&quot;Landing Page&quot;,&quot;lesson_path&quot;:&quot;/lessons/foundations-landing-page&quot;,&quot;lesson_has_live_preview&quot;:true,&quot;likes&quot;:163,&quot;is_liked_by_current_user&quot;:false},{&quot;id&quot;:21034,&quot;repo_url&quot;:&quot;https://github.com/piotrnajda3000/landing-page&quot;,&quot;live_preview_url&quot;:&quot;https://piotrnajda3000.github.io/landing-page/&quot;,&quot;is_public&quot;:true,&quot;user_name&quot;:&quot;piotrnajda3000&quot;,&quot;user_id&quot;:431531,&quot;lesson_id&quot;:790,&quot;lesson_title&quot;:&quot;Landing Page&quot;,&quot;lesson_path&quot;:&quot;/lessons/foundations-landing-page&quot;,&quot;lesson_has_live_preview&quot;:true,&quot;likes&quot;:149,&quot;is_liked_by_current_user&quot;:false},{&quot;id&quot;:21866,&quot;repo_url&quot;:&quot;https://github.com/dipsthedestroya/odin-landing-page&quot;,&quot;live_preview_url&quot;:&quot;http://htmlpreview.github.io/?https://github.com/dipsthedestroya/odin-landing-page/blob/main/index.html&quot;,&quot;is_public&quot;:true,&quot;user_name&quot;:&quot;dipps18 &quot;,&quot;user_id&quot;:457482,&quot;lesson_id&quot;:790,&quot;lesson_title&quot;:&quot;Landing Page&quot;,&quot;lesson_path&quot;:&quot;/lessons/foundations-landing-page&quot;,&quot;lesson_has_live_preview&quot;:true,&quot;likes&quot;:75,&quot;is_liked_by_current_user&quot;:false},{&quot;id&quot;:22557,&quot;repo_url&quot;:&quot;https://github.com/jehep/landing&quot;,&quot;live_preview_url&quot;:&quot;https://jehep.github.io/landing/&quot;,&quot;is_public&quot;:true,&quot;user_name&quot;:&quot;jehep&quot;,&quot;user_id&quot;:472336,&quot;lesson_id&quot;:790,&quot;lesson_title&quot;:&quot;Landing Page&quot;,&quot;lesson_path&quot;:&quot;/lessons/foundations-landing-page&quot;,&quot;lesson_has_live_preview&quot;:true,&quot;likes&quot;:69,&quot;is_liked_by_current_user&quot;:false},{&quot;id&quot;:22548,&quot;repo_url&quot;:&quot;https://github.com/ranjang09/odin_landing_page&quot;,&quot;live_preview_url&quot;:&quot;https://ranjang09.github.io/odin_landing_page/&quot;,&quot;is_public&quot;:true,&quot;user_name&quot;:&quot;Gaurav Ranjan&quot;,&quot;user_id&quot;:462494,&quot;lesson_id&quot;:790,&quot;lesson_title&quot;:&quot;Landing Page&quot;,&quot;lesson_path&quot;:&quot;/lessons/foundations-landing-page&quot;,&quot;lesson_has_live_preview&quot;:true,&quot;likes&quot;:58,&quot;is_liked_by_current_user&quot;:false},{&quot;id&quot;:21031,&quot;repo_url&quot;:&quot;https://github.com/pablomattot/landing-page&quot;,&quot;live_preview_url&quot;:&quot;https://pablomattot.github.io/landing-page/&quot;,&quot;is_public&quot;:true,&quot;user_name&quot;:&quot;Pablo Mattot&quot;,&quot;user_id&quot;:242973,&quot;lesson_id&quot;:790,&quot;lesson_title&quot;:&quot;Landing Page&quot;,&quot;lesson_path&quot;:&quot;/lessons/foundations-landing-page&quot;,&quot;lesson_has_live_preview&quot;:true,&quot;likes&quot;:40,&quot;is_liked_by_current_user&quot;:false},{&quot;id&quot;:20920,&quot;repo_url&quot;:&quot;https://github.com/C19H3R/landing-page&quot;,&quot;live_preview_url&quot;:&quot;https://c19h3r.github.io/landing-page/&quot;,&quot;is_public&quot;:true,&quot;user_name&quot;:&quot;Karan Batra&quot;,&quot;user_id&quot;:474112,&quot;lesson_id&quot;:790,&quot;lesson_title&quot;:&quot;Landing Page&quot;,&quot;lesson_path&quot;:&quot;/lessons/foundations-landing-page&quot;,&quot;lesson_has_live_preview&quot;:true,&quot;likes&quot;:39,&quot;is_liked_by_current_user&quot;:false}],&quot;allSubmissionsPath&quot;:&quot;/lessons/790/project_submissions&quot;,&quot;userSubmission&quot;:null}" data-react-cache-id="project-submissions/index-0"><div class="mb-8 text-left"><div class="flex flex-col text-center md:flex-row md:justify-between"><div class="md:text-left"><h3 class="text-4xl font-medium">Solutions:</h3><h4 data-test-id="course-lesson-title" class="text-2xl text-gray-500 mb-4 md:mb-0">Foundations: (Landing Page)</h4></div><div><button type="button" class="top-btn top-btn-primary" data-test-id="add_submission_btn">Add Solution</button></div><div class="hidden" aria-label="modal--hidden"><div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto p-10 rounded-xl bg-white w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 odin-dark-bg-accent"><button class="
+  absolute inline
+  top-4 right-4 m-0 p-0 border-0
+  bg-transparent
+  text-odin-green hover:text-black text-xl font-black
+  cursor-pointer
+" type="button" aria-label="close"><i class="fas fa-times"></i></button></div></div><div class="hidden" aria-label="modal--hidden"><div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto p-10 rounded-xl bg-white w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 odin-dark-bg-accent"><button class="
+  absolute inline
+  top-4 right-4 m-0 p-0 border-0
+  bg-transparent
+  text-odin-green hover:text-black text-xl font-black
+  cursor-pointer
+" type="button" aria-label="close"><i class="fas fa-times"></i></button></div></div></div><div data-test-id="submissions-list"><div style="position: relative;"><div class="submissions__item" data-test-id="submission-item"><div class="submissions__left-container"><button class="link-button submissions__like hint--top" type="button" aria-label="Like submission" data-test-id="like-btn"><span data-test-id="number-of-likes">589</span> <i class="fa fa-heart" aria-label="Like icon"></i></button><p class="submissions__submission-title">Lyrenide</p></div><div class="submissions__actions"><a href="https://github.com/Lyrenide/Hakurei_Shrine" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="view-code-btn">View Code</a><a href="https://lyrenide.github.io/Hakurei_Shrine/" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="live-preview-btn">Live Preview</a><button class="link-button submissions__flag hint--top" aria-label="Report submission" type="button" data-test-id="flag-btn"><i class="fas fa-flag"></i></button></div><div class="hidden" aria-label="modal--hidden"><div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto p-10 rounded-xl bg-white w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 odin-dark-bg-accent"><button class="
+  absolute inline
+  top-4 right-4 m-0 p-0 border-0
+  bg-transparent
+  text-odin-green hover:text-black text-xl font-black
+  cursor-pointer
+" type="button" aria-label="close"><i class="fas fa-times"></i></button></div></div></div><div class="submissions__item" data-test-id="submission-item"><div class="submissions__left-container"><button class="link-button submissions__like hint--top" type="button" aria-label="Like submission" data-test-id="like-btn"><span data-test-id="number-of-likes">379</span> <i class="fa fa-heart" aria-label="Like icon"></i></button><p class="submissions__submission-title"> Lun-Dev</p></div><div class="submissions__actions"><a href="https://github.com/Lun-Dev/Landing-Page" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="view-code-btn">View Code</a><a href="https://lun-dev.github.io/Landing-Page/" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="live-preview-btn">Live Preview</a><button class="link-button submissions__flag hint--top" aria-label="Report submission" type="button" data-test-id="flag-btn"><i class="fas fa-flag"></i></button></div><div class="hidden" aria-label="modal--hidden"><div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto p-10 rounded-xl bg-white w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 odin-dark-bg-accent"><button class="
+  absolute inline
+  top-4 right-4 m-0 p-0 border-0
+  bg-transparent
+  text-odin-green hover:text-black text-xl font-black
+  cursor-pointer
+" type="button" aria-label="close"><i class="fas fa-times"></i></button></div></div></div><div class="submissions__item" data-test-id="submission-item"><div class="submissions__left-container"><button class="link-button submissions__like hint--top" type="button" aria-label="Like submission" data-test-id="like-btn"><span data-test-id="number-of-likes">233</span> <i class="fa fa-heart" aria-label="Like icon"></i></button><p class="submissions__submission-title">Othercatt</p></div><div class="submissions__actions"><a href="https://github.com/othercatt/odin-landing-page" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="view-code-btn">View Code</a><a href="https://othercatt.github.io/odin-landing-page/" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="live-preview-btn">Live Preview</a><button class="link-button submissions__flag hint--top" aria-label="Report submission" type="button" data-test-id="flag-btn"><i class="fas fa-flag"></i></button></div><div class="hidden" aria-label="modal--hidden"><div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto p-10 rounded-xl bg-white w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 odin-dark-bg-accent"><button class="
+  absolute inline
+  top-4 right-4 m-0 p-0 border-0
+  bg-transparent
+  text-odin-green hover:text-black text-xl font-black
+  cursor-pointer
+" type="button" aria-label="close"><i class="fas fa-times"></i></button></div></div></div><div class="submissions__item" data-test-id="submission-item"><div class="submissions__left-container"><button class="link-button submissions__like hint--top" type="button" aria-label="Like submission" data-test-id="like-btn"><span data-test-id="number-of-likes">163</span> <i class="fa fa-heart" aria-label="Like icon"></i></button><p class="submissions__submission-title">Appletri</p></div><div class="submissions__actions"><a href="https://github.com/Appletri/landing-page" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="view-code-btn">View Code</a><a href="https://appletri.github.io/landing-page/" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="live-preview-btn">Live Preview</a><button class="link-button submissions__flag hint--top" aria-label="Report submission" type="button" data-test-id="flag-btn"><i class="fas fa-flag"></i></button></div><div class="hidden" aria-label="modal--hidden"><div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto p-10 rounded-xl bg-white w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 odin-dark-bg-accent"><button class="
+  absolute inline
+  top-4 right-4 m-0 p-0 border-0
+  bg-transparent
+  text-odin-green hover:text-black text-xl font-black
+  cursor-pointer
+" type="button" aria-label="close"><i class="fas fa-times"></i></button></div></div></div><div class="submissions__item" data-test-id="submission-item"><div class="submissions__left-container"><button class="link-button submissions__like hint--top" type="button" aria-label="Like submission" data-test-id="like-btn"><span data-test-id="number-of-likes">149</span> <i class="fa fa-heart" aria-label="Like icon"></i></button><p class="submissions__submission-title">piotrnajda3000</p></div><div class="submissions__actions"><a href="https://github.com/piotrnajda3000/landing-page" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="view-code-btn">View Code</a><a href="https://piotrnajda3000.github.io/landing-page/" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="live-preview-btn">Live Preview</a><button class="link-button submissions__flag hint--top" aria-label="Report submission" type="button" data-test-id="flag-btn"><i class="fas fa-flag"></i></button></div><div class="hidden" aria-label="modal--hidden"><div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto p-10 rounded-xl bg-white w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 odin-dark-bg-accent"><button class="
+  absolute inline
+  top-4 right-4 m-0 p-0 border-0
+  bg-transparent
+  text-odin-green hover:text-black text-xl font-black
+  cursor-pointer
+" type="button" aria-label="close"><i class="fas fa-times"></i></button></div></div></div><div class="submissions__item" data-test-id="submission-item"><div class="submissions__left-container"><button class="link-button submissions__like hint--top" type="button" aria-label="Like submission" data-test-id="like-btn"><span data-test-id="number-of-likes">75</span> <i class="fa fa-heart" aria-label="Like icon"></i></button><p class="submissions__submission-title">dipps18 </p></div><div class="submissions__actions"><a href="https://github.com/dipsthedestroya/odin-landing-page" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="view-code-btn">View Code</a><a href="http://htmlpreview.github.io/?https://github.com/dipsthedestroya/odin-landing-page/blob/main/index.html" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="live-preview-btn">Live Preview</a><button class="link-button submissions__flag hint--top" aria-label="Report submission" type="button" data-test-id="flag-btn"><i class="fas fa-flag"></i></button></div><div class="hidden" aria-label="modal--hidden"><div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto p-10 rounded-xl bg-white w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 odin-dark-bg-accent"><button class="
+  absolute inline
+  top-4 right-4 m-0 p-0 border-0
+  bg-transparent
+  text-odin-green hover:text-black text-xl font-black
+  cursor-pointer
+" type="button" aria-label="close"><i class="fas fa-times"></i></button></div></div></div><div class="submissions__item" data-test-id="submission-item"><div class="submissions__left-container"><button class="link-button submissions__like hint--top" type="button" aria-label="Like submission" data-test-id="like-btn"><span data-test-id="number-of-likes">69</span> <i class="fa fa-heart" aria-label="Like icon"></i></button><p class="submissions__submission-title">jehep</p></div><div class="submissions__actions"><a href="https://github.com/jehep/landing" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="view-code-btn">View Code</a><a href="https://jehep.github.io/landing/" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="live-preview-btn">Live Preview</a><button class="link-button submissions__flag hint--top" aria-label="Report submission" type="button" data-test-id="flag-btn"><i class="fas fa-flag"></i></button></div><div class="hidden" aria-label="modal--hidden"><div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto p-10 rounded-xl bg-white w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 odin-dark-bg-accent"><button class="
+  absolute inline
+  top-4 right-4 m-0 p-0 border-0
+  bg-transparent
+  text-odin-green hover:text-black text-xl font-black
+  cursor-pointer
+" type="button" aria-label="close"><i class="fas fa-times"></i></button></div></div></div><div class="submissions__item" data-test-id="submission-item"><div class="submissions__left-container"><button class="link-button submissions__like hint--top" type="button" aria-label="Like submission" data-test-id="like-btn"><span data-test-id="number-of-likes">58</span> <i class="fa fa-heart" aria-label="Like icon"></i></button><p class="submissions__submission-title">Gaurav Ranjan</p></div><div class="submissions__actions"><a href="https://github.com/ranjang09/odin_landing_page" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="view-code-btn">View Code</a><a href="https://ranjang09.github.io/odin_landing_page/" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="live-preview-btn">Live Preview</a><button class="link-button submissions__flag hint--top" aria-label="Report submission" type="button" data-test-id="flag-btn"><i class="fas fa-flag"></i></button></div><div class="hidden" aria-label="modal--hidden"><div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto p-10 rounded-xl bg-white w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 odin-dark-bg-accent"><button class="
+  absolute inline
+  top-4 right-4 m-0 p-0 border-0
+  bg-transparent
+  text-odin-green hover:text-black text-xl font-black
+  cursor-pointer
+" type="button" aria-label="close"><i class="fas fa-times"></i></button></div></div></div><div class="submissions__item" data-test-id="submission-item"><div class="submissions__left-container"><button class="link-button submissions__like hint--top" type="button" aria-label="Like submission" data-test-id="like-btn"><span data-test-id="number-of-likes">40</span> <i class="fa fa-heart" aria-label="Like icon"></i></button><p class="submissions__submission-title">Pablo Mattot</p></div><div class="submissions__actions"><a href="https://github.com/pablomattot/landing-page" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="view-code-btn">View Code</a><a href="https://pablomattot.github.io/landing-page/" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="live-preview-btn">Live Preview</a><button class="link-button submissions__flag hint--top" aria-label="Report submission" type="button" data-test-id="flag-btn"><i class="fas fa-flag"></i></button></div><div class="hidden" aria-label="modal--hidden"><div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto p-10 rounded-xl bg-white w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 odin-dark-bg-accent"><button class="
+  absolute inline
+  top-4 right-4 m-0 p-0 border-0
+  bg-transparent
+  text-odin-green hover:text-black text-xl font-black
+  cursor-pointer
+" type="button" aria-label="close"><i class="fas fa-times"></i></button></div></div></div><div class="submissions__item" data-test-id="submission-item"><div class="submissions__left-container"><button class="link-button submissions__like hint--top" type="button" aria-label="Like submission" data-test-id="like-btn"><span data-test-id="number-of-likes">39</span> <i class="fa fa-heart" aria-label="Like icon"></i></button><p class="submissions__submission-title">Karan Batra</p></div><div class="submissions__actions"><a href="https://github.com/C19H3R/landing-page" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="view-code-btn">View Code</a><a href="https://c19h3r.github.io/landing-page/" target="_blank" rel="noreferrer" class="submissions__button" data-test-id="live-preview-btn">Live Preview</a><button class="link-button submissions__flag hint--top" aria-label="Report submission" type="button" data-test-id="flag-btn"><i class="fas fa-flag"></i></button></div><div class="hidden" aria-label="modal--hidden"><div class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 h-auto p-10 rounded-xl bg-white w-11/12 sm:w-4/5 md:w-3/5 lg:w-2/5 odin-dark-bg-accent"><button class="
+  absolute inline
+  top-4 right-4 m-0 p-0 border-0
+  bg-transparent
+  text-odin-green hover:text-black text-xl font-black
+  cursor-pointer
+" type="button" aria-label="close"><i class="fas fa-times"></i></button></div></div></div></div><p class="submissions__view-more"><span>Showing 10 most liked submissions - </span><a data-test-id="view-all-projects-link" href="https://www.theodinproject.com/lessons/790/project_submissions"> View full list of solutions</a></p></div></div></div>
+
+      <div class="lesson-button-group">
+        <a title="Go back to &#39;Foundations&#39;" class="button button--secondary lesson-button-group__item lesson-button" data-test-id="view-course-btn" href="https://www.theodinproject.com/paths/foundations/courses/foundations">
+  <i class="lesson-button__icon far fa-map"></i>View Course
+</a>
+  
+<button data-controller="complete-button" data-complete-button-is-completed-value="false" data-complete-button-is-loading-value="false" data-action="click-&gt;complete-button#toggle" data-complete-button-id-param="790" data-complete-button-loading-class="complete-button--loading" data-complete-button-completed-class="complete-button--completed" data-test-id="complete-button" class="button button--primary lesson-button-group__item complete-button">
+  <span class="complete-button__loading-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" role="img" aria-labelledby="acojdj9i4nbwy1azcl7043aop155heh6 ad76ho43zru5dhntb19k4lbuwc3w8qtc" class="animate-spin h-6"><title id="acojdj9i4nbwy1azcl7043aop155heh6">loading</title><desc id="ad76ho43zru5dhntb19k4lbuwc3w8qtc">loading spinner</desc>
+  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3"></circle>
+  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+</svg>
+
+  </span>
+
+  <span class="complete-button__content">
+    <span class="complete-button__completed-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" role="img" aria-labelledby="ajauidru0luw06ak7or849ct0g53lryu actopy0nu5jhic3m8uszfjz3fbw0zo50" class="h-6"><title id="ajauidru0luw06ak7or849ct0g53lryu">check</title><desc id="actopy0nu5jhic3m8uszfjz3fbw0zo50">checkmark icon</desc>
+  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+</svg>
+
+    </span>
+
+    <span class="complete-button__text" data-complete-button-target="text">Mark Complete</span>
+</span>
+</button>
+
+
+
+  <a title="Move on to &#39;Fundamentals Part 1&#39;" class="button button--secondary lesson-button-group__item lesson-button" data-test-id="next-lesson-btn" href="https://www.theodinproject.com/lessons/foundations-fundamentals-part-1">
+    <i class="lesson-button__icon far fa-arrow-alt-circle-right" aria-hidden="true"></i>Next Lesson
+</a>
+      </div>
+    </div>
+
+    <a target="_blank" rel="noreferrer noopener" class="lesson-functions__edit-lesson-link" href="https://github.com/TheOdinProject/curriculum/edit/main/foundations/html_css/project/html-css-foundations-project.md">
+      <span class="fab fa-github mr-1"></span>
+      <span> Improve this lesson on GitHub</span>
+</a>
+    <div class="bottom-cta">
+  <p class="bottom-cta__heading">Have a question?</p>
+
+  <p class="bottom-cta__sub-heading">Chat with our friendly Odin community in our Discord chatrooms!</p>
+  <a class="button button--secondary" target="_blank" rel="noreferrer" href="https://discord.gg/fbFCkYabZB">Open Discord</a>
+</div>
+
+
+    <div class="card-main advert">
+  <div class="advert__header">
+    <h2 class="advert__pitch">Are you interested in accelerating your web development learning experience?</h2>
+    <a href="https://www.thinkful.com/?utm_source=odin&amp;utm_medium=cpc&amp;utm_campaign=odin-homepage&amp;utm_content=web-dev-3-icons" class="button button--primary ad">Get started</a>
+  </div>
+  <div class="advert__body">
+    <a href="https://www.thinkful.com/?utm_source=odin&amp;utm_medium=cpc&amp;utm_campaign=odin-homepage&amp;utm_content=tf-logo" alt="Thinkful" class="advert__brand-anchor ad">
+        <div class="advert__brand">
+          <img alt="Thinkful Logo" class="advert__logo" src="./Project_ Landing Page _ The Odin Project_files/thinkful-logo-b82fbfcec7075b71956a786a15683fd87df7efe335429c80b3156d5dd3b74ef5.svg">
+          <h2 class="advert__brand-name">Thinkful</h2>
+        </div>
+    </a>
+    <ul class="advert__icons-group">
+      <li class="advert__icons-group-item">
+        <img alt="5-6 months" class="advert__icon" src="./Project_ Landing Page _ The Odin Project_files/icon-calendar-13845c7b0b4004268fc976b15e5f4dee9a06d7b72fd962810aa0536e5f6e9806.svg">
+        <p class="advert__icon-text">5-6 months</p>
+      </li>
+
+      <li class="advert__icons-group-item">
+        <img alt="Job Guarantee" class="advert__icon" src="./Project_ Landing Page _ The Odin Project_files/icon-guarantee-047f6434b566fba5814aae8aa8cb7c7e3c26ad7ec996cf7b37ebebee8e78cff4.svg">
+        <p class="advert__icon-text">Job Guarantee</p>
+      </li>
+
+      <li class="advert__icons-group-item">
+        <img alt="1-on-1 Mentorship" class="advert__icon" src="./Project_ Landing Page _ The Odin Project_files/icon-mentor-1a98bfba6144856bdce308fe83cbfe0831429e79f5f3f6c4fb0c78153c7ab8b7.svg">
+        <p class="advert__icon-text">1-on-1 Mentorship</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+</div>
+
+
+    <footer>
+  <div class="max-w-7xl px-4 sm:px-6 lg:px-8 py-3 mx-auto">
+    <div class="flex justify-center lg:justify-between py-5">
+      <div class="w-80">
+        <div class="flex-shrink-0 hidden lg:block items-center">
+          <a href="https://www.theodinproject.com/">
+  <svg xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="apy4jwxn8p93alrbpdil3iveubthkyxi" class="block h-15 w-auto text-gray-800"><title id="apy4jwxn8p93alrbpdil3iveubthkyxi">Odin Logo</title>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3"></path>
+<ellipse cx="27.7849" cy="27.1223" rx="1.26005" ry="1.24284" fill="#353535"></ellipse>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.446 25.7092C19.446 25.2752 19.0891 24.9233 18.6493 24.9233C17.638 24.9233 15.9034 24.9233 14.8922 24.9233C14.4523 24.9233 14.0955 25.2752 14.0955 25.7092C14.0955 26.3856 14.0955 27.3716 14.0955 28.1426C14.0955 28.7935 14.6305 29.3212 15.2902 29.3212C15.6995 29.3212 16.1763 29.3212 16.6578 29.3212C17.3973 29.3212 18.1062 29.0314 18.6295 28.5155C19.1522 28.0001 19.446 27.3004 19.446 26.5712C19.446 26.2585 19.446 25.9621 19.446 25.7092Z" fill="#A78347"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.0004 4.5308L43.8517 0L39.0002 18L35.0002 22L35.0004 4.5308Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.8514 4.5308L0.000132561 0L4.85156 18L8.85156 22L8.8514 4.5308Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.442 12.7438C35.442 12.7438 28.7539 8.34589 22.0657 8.34589C15.3776 8.34589 8.68945 12.7438 8.68945 12.7438V25.9373L10.473 29.4556C11.7527 24.5929 17.5445 22.5672 21.576 25.5723L22.0657 25.9373L22.5554 25.5723C26.587 22.5672 32.3788 24.5929 33.6585 29.4556L35.442 25.9373V12.7438Z" fill="#E3B261"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6068 32.5341L14.0398 53.2041L9.12134 49.6858L13.148 34.7331L17.6068 32.5341Z" fill="#D4D4D4"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.5243 32.5341L30.0913 53.2041L35.0098 49.6858L30.9831 34.7331L26.5243 32.5341Z" fill="#D5D5D5"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.68933 25.9373L5.12231 39.1309L9.58108 47.9267L13.1481 34.7331L8.68933 25.9373Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.4418 25.9373L39.0088 39.1309L34.55 47.9267L30.983 34.7331L35.4418 25.9373Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.6069 32.5341L13.594 54.0837L22.0656 58.4815L30.5373 54.0837L26.5244 32.5341L22.3983 30.4992L22.0656 30.3352L17.6069 32.5341Z" fill="#E6E6E6"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.6636 33.4137H20.5425C20.5425 33.4137 20.5425 33.9348 20.5425 34.514C20.5425 34.9222 20.707 35.3131 20.9995 35.6016C21.292 35.8901 21.6884 36.0524 22.1022 36.0524C22.1026 36.0524 22.1035 36.0524 22.1039 36.0524C22.5177 36.0524 22.9141 35.8901 23.2066 35.6016C23.4991 35.3131 23.6636 34.9222 23.6636 34.514C23.6636 33.9348 23.6636 33.4137 23.6636 33.4137Z" fill="#353535"></path>
+<path d="M68.808 20.384L67.704 20.456C67.368 20.456 67.056 20.456 66.696 20.432C66.504 20.432 66.288 20.6 66.144 20.6L65.688 20.408L63.36 20.288L63.288 22.256L63.576 22.544L65.04 22.496C65.112 22.496 65.256 22.472 65.424 22.424L65.544 22.304L66.072 22.376L66.216 23.36L66.12 24.896L66.264 26.024L66.144 30.92L66.024 34.304L66.24 34.544L65.88 36.056V37.904L67.152 38.096L67.824 37.976L68.52 37.592L68.328 35.888V31.376L68.04 30.92L68.064 30.896L68.28 29.456L68.256 27.608V27.2C68.256 27.032 68.232 26.816 68.232 26.624C68.208 26.48 68.208 25.88 68.208 25.664L68.256 23.888L68.16 23.36L68.304 22.352H69.048L69.768 22.4L70.008 22.472H71.088L71.16 21.344L71.016 20.336L68.808 20.384ZM73.2638 33.992L73.3118 35.504L73.6478 35.864L73.2638 36.32L73.1918 37.928L74.7038 38.072L75.6878 38.024L75.7118 37.136L75.6398 36.056L75.4958 34.784L75.5198 34.712L75.6398 30.536L77.5118 29.744H77.5358L78.9278 29.432L78.9038 29.864L78.9758 30.2L78.9278 33.896L79.2878 34.28L79.0478 34.496L78.8798 37.184L79.1918 38.024H80.5838L81.4718 37.976L81.4238 36.656L81.2558 36.056L81.2078 32.984L81.1598 28.688L81.1118 28.208L81.0398 27.128L81.1598 24.872L80.9438 24.176L81.1838 23.864L81.2078 22.952V22.976L81.3518 21.608L81.4238 20.408L80.0558 20.36L79.1678 20.336L78.8078 21.032L78.9278 21.992L78.9758 24.152L79.0478 26.336L78.9518 26.984L78.6878 27.104L78.2318 27.32L77.2478 27.752L77.0318 28.016L76.6478 27.872L75.6398 28.232L75.5918 28.256L75.3758 25.928L75.4718 24.344L75.2078 24.128L75.4958 23.672L75.6158 22.208L75.7118 20.48L73.6478 20.216L73.0718 20.6L73.2398 22.088L73.1678 22.568L73.2398 24.152L73.4078 25.64L73.3118 27.992L73.4798 30.704L73.2638 33.992ZM90.8258 22.616L90.8738 21.272L90.8498 20.336L88.4738 20.36L87.5378 20.552L87.2018 20.36H85.8338L84.7058 20.504L84.8258 22.208L85.0898 22.52L84.8258 22.928L84.8498 24.152L84.8258 26.024V27.8L84.7538 28.688L84.9458 31.064L84.8498 31.256L84.8738 32.552V33.104L85.0898 33.392L84.8018 34.016L84.7778 35.12L84.8018 35.384L84.6578 37.016L84.7778 38L86.5778 38.024L86.7698 37.904H87.6098L88.9778 38.048L90.5618 38.072L91.1138 37.832L91.2098 36.944L91.2578 35.744L90.0578 35.72L89.4578 35.912L87.5378 35.936L87.3458 35.888L87.1298 35.84L87.0818 33.512L87.0578 33.464L87.1298 33.248L86.9858 32.552L87.0818 30.08H87.4658L88.9778 30.128L90.1538 30.176L90.2018 29.192L90.3458 28.472L90.0338 27.872L88.8098 27.992L87.8738 28.04L86.9858 27.992L86.9378 27.056L86.6978 26.864L86.9618 26.432L87.0818 25.712V23.336L87.1298 22.736V22.472H87.3458L88.6658 22.52L89.0498 22.448L89.1218 22.424L89.6978 22.616H90.8258ZM102.331 20.312L102.115 20.336H101.227L101.179 20.504L101.035 21.224L100.939 21.368L99.6429 24.608L99.7629 24.872L99.3309 25.184L98.0349 28.328L97.8429 28.448L97.8909 29.96L98.4669 31.184L99.3309 33.224L100.051 34.712H100.315L100.243 35.12L101.083 37.208L101.107 38L103.291 38.024L103.339 37.76L103.627 36.992L104.923 33.92L105.475 32.768L105.499 32.384L105.691 32.144L106.867 29.768L106.939 28.448L106.123 26.672L105.475 25.232H105.235L105.115 24.584L103.891 21.584L103.411 20.264L102.331 20.312ZM102.379 34.952L101.323 32.192L100.843 31.208L100.363 30.872L100.603 30.584L100.387 29.888L100.075 29.096L100.051 28.808L100.843 26.744L100.675 26.36L101.011 26.264L102.331 22.784L102.475 23.24L103.027 24.704L103.459 24.968L103.243 25.256L104.179 27.68L104.467 28.496L104.659 29.096L103.483 31.976L103.507 32.408H103.531L103.243 32.696L102.475 35.216L102.379 34.952ZM113.227 35.72L114.067 34.016L116.539 30.224L116.971 29.504L116.947 27.752L116.515 27.2L116.539 27.248L114.715 24.824L114.091 23.72L113.251 22.88L112.987 22.088L111.499 20.048L110.227 20.432L109.195 20.744L109.219 21.632L109.291 22.88L109.531 23.192L109.291 23.648L109.315 29.936L109.459 30.872L109.315 36.248V36.224L109.267 37.832L110.827 38.048L111.619 38.264L113.227 35.72ZM111.451 26.744L111.379 23.264L111.523 23.432L113.899 27.248L114.379 27.632L114.475 28.208L114.907 28.856L114.475 29.552L113.683 30.872L112.675 32.816L112.867 33.032L112.435 33.248L111.379 34.952L111.355 35L111.379 33.704L111.475 28.952L111.091 27.824L111.451 26.744ZM119.431 27.56L119.359 28.88L119.287 29.624V34.112V34.976L119.575 35.384L119.287 35.864L118.951 38L120.055 38.024L120.559 38.048L121.615 37.712L121.639 36.824L121.591 36.368L121.543 36.008V29.36L121.279 29.192L121.495 28.688L121.447 28.088L121.351 27.152L121.423 25.928L121.495 22.784L121.615 22.184L121.735 20.432L120.175 20.336L119.047 20.408L119.167 21.608L119.383 21.728L119.191 22.16L119.263 26.96L119.431 27.56ZM133.115 35.888V35.12L132.947 29.864L132.683 29.072L132.875 28.064L133.115 22.16L133.163 20.528L132.179 20.36L130.787 20.384V22.304L131.027 22.64L130.787 23.384V25.448L129.995 24.152L129.803 24.056L129.203 23.096L127.043 20.12L125.147 20.648V21.896L125.243 24.392L125.339 25.76L125.243 30.752L125.459 31.232L125.267 31.928L125.123 35.336V35.744L125.195 35.96L125.027 37.88L126.059 38.072L127.475 38.024L127.523 36.488L127.451 36.152L127.475 33.656L127.259 32.744L127.379 31.88L127.427 26.408L127.139 26.096L127.115 26.048L127.451 25.184V23.888L128.075 24.752L129.059 26.12L129.755 26.96L130.091 27.488L130.427 27.848L130.811 28.496L130.835 30.992L130.907 31.448L130.835 31.568L130.811 33.872L130.835 36.152L130.811 38.024L131.627 38.072L132.947 38.048L133.259 37.232L133.115 35.888ZM147.393 28.76L148.161 28.016L148.905 27.104L148.953 25.448L146.457 22.808L145.953 22.64L145.857 22.232L143.697 20L142.929 20.288L141.777 20.792L141.825 22.4L141.945 23.384V27.32L141.897 27.44L141.873 33.44L142.161 33.752L141.945 34.496L141.681 37.928L143.073 38.072L144.273 38L144.129 35.024L143.745 34.688L144.129 34.112L144.081 32.456L144.297 32.216L145.905 30.392L147.393 28.76ZM144.105 27.128L143.841 26.648L144.081 25.904L144.057 24.752L144.081 23.048L145.473 24.608L145.689 24.752L145.857 25.088L146.889 26.24L146.505 26.792L146.265 27.392L146.001 27.32L144.801 28.736L144.105 29.48V27.128ZM153.466 30.608L154.426 32.552L154.642 33.104L155.53 34.784L155.818 34.928L155.794 35.336L156.634 37.256L157.21 38.192L159.154 37.112L159.178 36.416L158.386 35.576L157.954 34.664V34.688L157.618 33.992L157.474 33.92V33.608L156.514 31.976C156.346 31.736 156.202 31.616 156.01 31.4V30.992C155.866 30.704 155.578 30.296 155.41 29.96L156.082 29.048L156.49 28.544L157.258 27.632L158.362 26.288L158.53 24.848L157.378 23.792C157.354 23.792 156.97 23.912 156.946 23.888L156.802 23.288L152.986 19.976L151.09 20.744L151.186 22.808L151.306 27.392L151.114 27.872L151.162 29.12L151.258 31.928V32.864L151.474 33.176L151.114 34.112L150.97 37.928L152.554 38.072L153.514 37.688L153.49 35.696L153.418 35.48L153.346 33.08L153.322 30.464L153.466 30.608ZM153.37 28.352L153.274 26.216L153.226 25.952L153.178 25.808L153.082 25.376L153.274 24.92V24.68L153.322 22.832L155.53 25.016L155.698 25.136L156.178 25.736L155.914 26.072C155.602 26.504 155.026 27.248 154.69 27.656L153.49 29.144L153.322 29.24L153.37 28.352ZM164.323 20.312L164.107 20.336H163.219L163.171 20.504L163.027 21.224L162.931 21.368L161.635 24.608L161.755 24.872L161.323 25.184L160.027 28.328L159.835 28.448L159.883 29.96L160.459 31.184L161.323 33.224L162.043 34.712H162.307L162.235 35.12L163.075 37.208L163.099 38L165.283 38.024L165.331 37.76L165.619 36.992L166.915 33.92L167.467 32.768L167.491 32.384L167.683 32.144L168.859 29.768L168.931 28.448L168.115 26.672L167.467 25.232H167.227L167.107 24.584L165.883 21.584L165.403 20.264L164.323 20.312ZM164.371 34.952L163.315 32.192L162.835 31.208L162.355 30.872L162.595 30.584L162.379 29.888L162.067 29.096L162.043 28.808L162.835 26.744L162.667 26.36L163.003 26.264L164.323 22.784L164.467 23.24L165.019 24.704L165.451 24.968L165.235 25.256L166.171 27.68L166.459 28.496L166.651 29.096L165.475 31.976L165.499 32.408H165.523L165.235 32.696L164.467 35.216L164.371 34.952ZM171.71 27.608L171.59 28.928L171.614 30.416L171.638 30.752V31.688L171.542 34.304L171.59 34.52L171.23 35.024L170.174 35.72L169.118 36.152V37.4L170.438 38.384L172.214 36.944L172.19 36.464L172.838 36.368L173.606 35.696L173.99 35.024L173.702 30.896L173.51 30.176L173.774 29.984L173.678 23.288L173.966 21.176L173.654 20.336L171.374 20.384V21.728L171.806 21.968L171.494 22.352L171.566 26.408L171.71 27.608ZM183.502 22.616L183.55 21.272L183.526 20.336L181.15 20.36L180.214 20.552L179.878 20.36H178.51L177.382 20.504L177.502 22.208L177.766 22.52L177.502 22.928L177.526 24.152L177.502 26.024V27.8L177.43 28.688L177.622 31.064L177.526 31.256L177.55 32.552V33.104L177.766 33.392L177.478 34.016L177.454 35.12L177.478 35.384L177.334 37.016L177.454 38L179.254 38.024L179.446 37.904H180.286L181.654 38.048L183.238 38.072L183.79 37.832L183.886 36.944L183.934 35.744L182.734 35.72L182.134 35.912L180.214 35.936L180.022 35.888L179.806 35.84L179.758 33.512L179.734 33.464L179.806 33.248L179.662 32.552L179.758 30.08H180.142L181.654 30.128L182.83 30.176L182.878 29.192L183.022 28.472L182.71 27.872L181.486 27.992L180.55 28.04L179.662 27.992L179.614 27.056L179.374 26.864L179.638 26.432L179.758 25.712V23.336L179.806 22.736V22.472H180.022L181.342 22.52L181.726 22.448L181.798 22.424L182.374 22.616H183.502ZM185.362 30.896L186.226 32.456L187.33 33.488L187.138 33.92L188.962 36.752L189.01 37.04L189.826 38.312L190.642 37.784L191.89 36.752L191.338 35.864L190.09 34.232L188.986 32.36L188.098 30.992L187.882 30.512L187.546 30.176L187.306 29.72L186.946 29.024L187.258 28.448L187.714 27.632L188.506 26.384L189.946 24.248L190.066 23.6L190.474 23.336L191.146 22.4L191.818 21.2L190.018 20L189.178 20.984L189.154 21.176L187.81 23.384V23.48L187.21 24.44V25.016L186.346 25.856L184.786 28.496L184.81 30.032L185.362 30.896ZM198.12 20.384L197.016 20.456C196.68 20.456 196.368 20.456 196.008 20.432C195.816 20.432 195.6 20.6 195.456 20.6L195 20.408L192.672 20.288L192.6 22.256L192.888 22.544L194.352 22.496C194.424 22.496 194.568 22.472 194.736 22.424L194.856 22.304L195.384 22.376L195.528 23.36L195.432 24.896L195.576 26.024L195.456 30.92L195.336 34.304L195.552 34.544L195.192 36.056V37.904L196.464 38.096L197.136 37.976L197.832 37.592L197.64 35.888V31.376L197.352 30.92L197.376 30.896L197.592 29.456L197.568 27.608V27.2C197.568 27.032 197.544 26.816 197.544 26.624C197.52 26.48 197.52 25.88 197.52 25.664L197.568 23.888L197.472 23.36L197.616 22.352H198.36L199.08 22.4L199.32 22.472H200.4L200.472 21.344L200.328 20.336L198.12 20.384Z" fill="currentColor"></path>
+</svg>
+
+</a>
+        </div>
+
+        <p class="py-4 hidden lg:block">High quality coding education created by an Open-Source community.</p>
+
+        <div class="flex justify-between">
+          <a href="https://github.com/TheOdinProject"><span aria-label="github" class="text-gray-700 text-4xl hover:text-gray-900 fab fa-github odin-dark-icon"></span></a>
+          <a href="https://discord.gg/V75WSQG"><span aria-label="discord chat" class="text-gray-700 text-4xl hover:text-gray-900 fab fa-discord odin-dark-icon"></span></a>
+          <a href="https://www.facebook.com/theodinproject/"><span aria-label="facebook" class="text-gray-700 hover:text-gray-900 text-4xl fab fa-facebook odin-dark-icon"></span></a>
+          <a href="https://twitter.com/TheOdinProject"><span aria-label="twitter" class="text-gray-700 hover:text-gray-900 text-4xl fab fa-twitter odin-dark-icon"></span></a>
+        </div>
+      </div>
+
+        <div class="border border-gray-300 rounded-md p-8 hidden lg:block">
+    <h3 class="text-3xl font-bold text-gray-700">Have a question?</h3>
+    <p class="py-3 text-gray-800 text-md font-light w-96">Chat with the Odin community on Discord!</p>
+
+    <a class="inline-flex items-center px-14 py-3 border border-transparent text-lg font-medium rounded-md shadow-sm text-white bg-gray-700  hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="https://discord.gg/fbFCkYabZB">
+      Open Discord
+</a>  </div>
+
+    </div>
+
+    <div class="flex flex-col-reverse justify-between lg:flex-row items-center lg:pb-4 gap-y-6">
+      <p class="text-gold-600 text-base odin-dark-text">
+        Web design by Ada Chiu
+      </p>
+
+      <div class="flex items-center space-x-0 gap-x-8 gap-y-3 flex-wrap justify-center md:block md:space-x-10 odin-dark-text">
+        <a class="hover:text-gray-500" href="https://www.theodinproject.com/about">About</a>
+        <a class="hover:text-gray-500" href="https://www.theodinproject.com/faq">FAQ</a>
+        <a target="_blank" rel="noreferrer" class="hover:text-gray-500" href="https://dev.to/theodinproject">Blog</a>
+        <a class="hover:text-gray-500" href="https://www.theodinproject.com/success_stories">Success Stories</a>
+        <a class="hover:text-gray-400" href="https://www.theodinproject.com/contributing">Contribute</a>
+        <a class="hover:text-gray-500" href="https://www.theodinproject.com/lessons/installation_lessons">Appendix</a>
+        <a class="hover:text-gray-500" href="https://www.theodinproject.com/terms_of_use">Terms of Use</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <div class="floating-dropdown">
+  <div class="floating-dropdown__item floating-dropdown--hidden-item text-center" data-toggle="tooltip" data-placement="left" title="" data-original-title="Chat">
+    <a target="_blank" rel="noreferrer" class="chat-floating-btn" href="https://discord.gg/fbFCkYabZB">
+      <i class="fas fa-comment"></i>
+</a>  </div>
+  <div class="floating-dropdown__item main-floating-btn">
+    <i class="fas fa-comments" aria-hidden="true"></i>
+  </div>
+</div>
+
+    <!-- Google Analytics Tracking Snippet -->
+<!-- Only load it if we're in a production environment! -->
+  
+  
+
+  <script type="text/javascript">  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41005438-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+    
+    
+    <script type="text/javascript">
+      window.SENTRY_DSN = "https://6cc08494f58c45d0b78be7b6bea5d0cc@o572484.ingest.sentry.io/5721923"
+      window.currentUserLoggedIn = "true"
+
+        window.currentUserId = "292141"
+        window.currentUserEmail = "stacey@maloric.com"
+    </script>
+
+    <script src="./Project_ Landing Page _ The Odin Project_files/error_tracking-fdad21d413fc9d529078.js"></script>
+
+  
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
