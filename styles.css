@@ -41,6 +41,9 @@ a:link {
   text-decoration: none;
 }
 
+.right a:visited {
+  color: #e5e7eb;
+}
 /* WELCOME */
 .welcome {
   padding: 7em 0;
@@ -116,6 +119,9 @@ main h2 {
   flex-direction: column;
   align-items: center;
   gap: 0.5em;
+}
+.card p {
+  color: #1f2937;
 }
 
 .square {
